@@ -35,10 +35,10 @@ h = 1/(25*tf); % Step size
 t = h:h:tf;
 
 % State variables
-xs = zeros(1/h * tf, 4);
-xs = [x0 th0 dx0 dth0; xs];
+xse = zeros(1/h * tf, 4);
+xse = [x0 th0 dx0 dth0; xse];
 
 % Euler Method
 for i=t
-    xs(i) = xs(i - 1) + h * f(x(i - 1));
+    xse(i) = xse(i - 1) + h * f(x(i - 1));
 end

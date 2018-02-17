@@ -12,7 +12,7 @@ clc
 M = 0.5;       % mass of the cart                       [kg]
 m = 0.2;       % mass of the pendulum                   [kg]
 b = 0.1;       % coefficient of friction for cart       [N/m/sec]
-l = 0.3;       % length to pendulum center of mass      [m]
+L = 0.3;       % length to pendulum center of mass      [m]
 I = 0.006;     % mass moment of inertia of the pendulum [kg.m^2]
 g = 9.807;     % earth gravity                          [m/s²]
 
