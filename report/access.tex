@@ -42,6 +42,98 @@
 \label{sec:introduction}
 \PARstart{T}{he}
 
-\EOD
+% Not sure the section
+\subsection{Equation system}
+\begin{align}
+  (M + m)\ddot{x} + b\dot{x} + ml\theta\cos{\theta} - ml\dot{\theta}^2\sin{theta}
+     = F \label{eq:NL1} \\
+  (I + ml^2)\ddot{\theta} + mgl\sin{\theta} = -ml\ddot{x}\cos{\theta} \label{eq:NL2}
+\end{align}
+isolating the variable $\ddot{x}$ in~\ref{eq:NL1} we get,
+\[
+  \ddot{x} = \frac{F - b\dot{x} - ml\ddot{\theta}\cos{\theta} + ml\dot{\theta}^2\sin{\theta}}{M + m}
+\]
+substituting in~\ref{eq:NL2} and isolating $\ddot{\theta}$ we get
+\begin{equation}
+  \label{eq:NLddth}
+  \ddot{\theta} = \frac{-ml(F - b\dot{x} + ml\dot{\theta}^2\sin{\theta}) - mgl(M + m)\sin{\theta}}
+       {I(M + m) + Mml^2 + m^2l^2\sin^2{\theta}}
+\end{equation}
+Similarly, isolating $\ddot{\theta}$ in~\ref{eq:NL2} we get,
+\[
+  \ddot{\theta} = \frac{-ml(\ddot{x}\cos{\theta} + g\sin{\theta})}{I + ml^2}
+\]
+substituting and isolating $\ddot{x}$, we get
+\begin{equation}
+  \label{eq:NLddx}
+  \ddot{x} = \frac{(I + ml^2)(F - b\dot{x} + ml\dot{\theta}^2\sin{\theta})
+    + m^2gl^2\sin{\theta}\cos{\theta}}{I(M + m) + Mml^2 + m^2l^2\sin^2{\theta}}
+\end{equation}
 
+\subsection{non-linear state space model}
+\subsubsection{state space variables}
+\begin{align*}
+  x_1 &= x       & \text{cart position}    \\
+  x_2 &= \theta       & \text{pendulum angle}   \\
+  x_3 &= \dot{x} & \text{cart velocity}    \\
+  x_4 &= \dot{\theta} & \text{angular velocity} \\
+  u   &= F       & \text{input force}
+\end{align*}
+\subsection{state space equation system}
+\begin{equation}
+  \label{eq:NLM}
+  \begin{aligned}
+    \dot{x_1} &= x_3 \\
+    \dot{x_2} &= x_4 \\
+    \dot{x_3} &= \frac{(I + ml^2)(F - bx_3 + mlx_4^2\sin{x_2})
+      + m^2gl^2\sin{x_2}\cos{x_2}}{I(M + m) + Mml^2 + m^2l^2\sin^2{x_2}} \\
+    \dot{x_4} &= \frac{-ml(F - bx_3 + mlx_4^2\sin{x_2}) - mgl(M + m)\sin{x_2}}
+       {I(M + m) + Mml^2 + m^2l^2\sin^2{x_2}}
+  \end{aligned}
+\end{equation}
+
+\subsection{linearization}
+When $x_2 \to 0$,
+\begin{itemize}
+  \item $\sin{x_2} \to x_2$
+  \item $\cos{x_2} \to 1$
+  \item $\sin^2{x_2} \to x_2^2 \approx 0$
+  \item $x_4^2 \approx 0$
+\end{itemize}
+therefore, we can express~\ref{eq:NLM} when $\theta \to 0$ as,
+\begin{equation}
+  \label{eq:LME}
+  \begin{aligned}
+    \dot{x_1} &= x_3 \\
+    \dot{x_2} &= x_4 \\
+    \dot{x_3} &= \frac{(I + ml^2)(F - bx_3) + m^2gl^2x_2}{I(M + m) + Mml^2} \\
+    \dot{x_4} &= \frac{-ml(F - bx_3) - mgl(M + m)x_2}{I(M + m)}
+  \end{aligned}
+\end{equation}
+or in matrix form
+\begin{equation}
+  \label{eq:LM}
+  \begin{aligned}
+    \dot{x} &= Ax + Bu \\
+    y       &= Cx + Du
+  \end{aligned}
+\end{equation}
+where
+\begin{align*}
+  x &= \begin{pmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{pmatrix} \in \mathbb{R}^{4 \times 1} \\
+  u &= F \in \mathbb{R} \\
+  y &= \begin{pmatrix} y_1 \\ y_2 \end{pmatrix} \in \mathbb{R}^{2 \times 1} \\
+  A &= \frac{1}{I(M + m) + Mml^2} \begin{pmatrix}
+    0 & 0 & 1 & 0 \\
+    0 & 0 & 0 & 1 \\
+    0 & m^2gl^2 & -(I + ml^2)b & 0 \\
+    0 & -mgl(M + m) & mlb & 0
+  \end{pmatrix} \in \mathbb{R}^{4 \times 4} \\
+  B &= \frac{1}{I(M + m) + Mml^2} \begin{pmatrix}
+    0 \\ 0 \\ I + ml^2 \\ -ml
+  \end{pmatrix} \in \mathbb{R}^{4 \times 1} \\
+  C &= \text{Andrea!!! we need to define our outputs}  \in \mathbb{R}^{4 \times 2} \\
+  D &= 0 \in \mathbb{R}^{2 \times 1}
+\end{align*}
+\EOD{}
 \end{document}
