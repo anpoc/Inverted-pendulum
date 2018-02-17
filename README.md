@@ -30,7 +30,6 @@
   - [ ] En el punto de equilibrio anterior de la curva de linealidad, linealizar el sistema utilizando
         cualquier método de Matlab/Simulink y analíticamente. Comparar (en una sola figura) las
         respuestas del sistema linealizado y el sistema no lineal en el punto de operación cambiando
-
         * la señal de entrada por dentro del rango de linealidad
         * la señal de entrada por fuera del rango de linealidad
         * las condiciones iniciales cerca al punto de equilibrio (dejando la entrada constante).
