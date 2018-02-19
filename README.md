@@ -23,7 +23,7 @@
         o una señal escalera. De igual manera obtener la curva de linealidad enviando diferentes
         entradas desde Matlab a Simulink y exportando los datos de salida de Simulink a Matlab.
         Finalmente, comparar las dos curvas y explicar las diferencias.
-  - [ ] Para una entrada constante de interés de la curva de linealidad, calcular los puntos de
+  - [ ok ] Para una entrada constante de interés de la curva de linealidad, calcular los puntos de
         equilibrio del sistema con la función vpasolve de Matlab y analíticamente, y comparar los
         resultados obtenidos con los de la curva de linealidad. Si hay varios puntos de equilibrio,
         explicar el resultado en términos de las condiciones iniciales.
