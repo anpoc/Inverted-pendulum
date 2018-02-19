@@ -1,8 +1,8 @@
 # Inverted-pendulum
 
 ##### TODO
-  - [ ] Describir y explicar el modelo, variables (entradas, salidas, estados) y parámetros.
-  - [ ] Implementar el sistema en Simulink utilizando bloques y máscaras (máscara con parámetros
+  - [ ok ] Describir y explicar el modelo, variables (entradas, salidas, estados) y parámetros.
+  - [ ok ] Implementar el sistema en Simulink utilizando bloques y máscaras (máscara con parámetros
         y condiciones iniciales del modelo). El diagrama debe ser claro, disminuyendo al mínimo la
         longitud de las ramas entre bloques, ubicando bien los bloques, conservando la dirección
         de los integradores de izquierda a derecha, poniendo las entradas a la izquierda y las salidas
@@ -19,7 +19,7 @@
   - [ ] Programar en Matlab la solución numérica de la ecuación de estado utilizando los métodos
         de Euler y Runge-Kutta, y comparar (en una sola figura) las respuestas temporales por los
         métodos anteriores y Simulink.
-  - [ ] Trazar la curva de linealidad para cada par entrada/estado en Simulink, aplicando escalones
+  - [ ok ] Trazar la curva de linealidad para cada par entrada/estado en Simulink, aplicando escalones
         o una señal escalera. De igual manera obtener la curva de linealidad enviando diferentes
         entradas desde Matlab a Simulink y exportando los datos de salida de Simulink a Matlab.
         Finalmente, comparar las dos curvas y explicar las diferencias.
@@ -34,7 +34,7 @@
     + la señal de entrada por fuera del rango de linealidad
     + las condiciones iniciales cerca al punto de equilibrio (dejando la entrada constante).
 
-  - [ ] Determinar la estabilidad del sistema en el punto de equilibrio anterior a partir del cálculo
+  - [ ok ] Determinar la estabilidad del sistema en el punto de equilibrio anterior a partir del cálculo
         de los valores propios.
   - [ ] Dibujar y explicar el retrato de fase (para cada par de variables de estado, dejando
         constantes las demás variables) obtenido con la función pplane8.m de Matlab. Determinar
