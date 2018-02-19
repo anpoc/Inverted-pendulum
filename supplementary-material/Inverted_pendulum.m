@@ -55,10 +55,10 @@ sys = ss(A,B,C,D);
 
 %% Linealization curve
 U = -5:0.1:5;
-X1 = zeros(length(U));
-X3 = zeros(length(U));
-X1_l = zeros(length(U));
-X3_l = zeros(length(U));
+X1 = repelem(0,length(U));
+X3 = repelem(0,length(U));
+X1_l = repelem(0,length(U));
+X3_l = repelem(0,length(U));
 
 for i = 1:length(U)
     u = U(i);
