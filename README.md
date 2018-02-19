@@ -1,8 +1,8 @@
 # Inverted-pendulum
 
 ##### TODO
-  - [ ok ] Describir y explicar el modelo, variables (entradas, salidas, estados) y parámetros.
-  - [ ok ] Implementar el sistema en Simulink utilizando bloques y máscaras (máscara con parámetros
+  - [X] Describir y explicar el modelo, variables (entradas, salidas, estados) y parámetros.
+  - [X] Implementar el sistema en Simulink utilizando bloques y máscaras (máscara con parámetros
         y condiciones iniciales del modelo). El diagrama debe ser claro, disminuyendo al mínimo la
         longitud de las ramas entre bloques, ubicando bien los bloques, conservando la dirección
         de los integradores de izquierda a derecha, poniendo las entradas a la izquierda y las salidas
@@ -19,11 +19,11 @@
   - [ ] Programar en Matlab la solución numérica de la ecuación de estado utilizando los métodos
         de Euler y Runge-Kutta, y comparar (en una sola figura) las respuestas temporales por los
         métodos anteriores y Simulink.
-  - [ ok ] Trazar la curva de linealidad para cada par entrada/estado en Simulink, aplicando escalones
+  - [X] Trazar la curva de linealidad para cada par entrada/estado en Simulink, aplicando escalones
         o una señal escalera. De igual manera obtener la curva de linealidad enviando diferentes
         entradas desde Matlab a Simulink y exportando los datos de salida de Simulink a Matlab.
         Finalmente, comparar las dos curvas y explicar las diferencias.
-  - [ ok ] Para una entrada constante de interés de la curva de linealidad, calcular los puntos de
+  - [X] Para una entrada constante de interés de la curva de linealidad, calcular los puntos de
         equilibrio del sistema con la función vpasolve de Matlab y analíticamente, y comparar los
         resultados obtenidos con los de la curva de linealidad. Si hay varios puntos de equilibrio,
         explicar el resultado en términos de las condiciones iniciales.
@@ -34,7 +34,7 @@
     + la señal de entrada por fuera del rango de linealidad
     + las condiciones iniciales cerca al punto de equilibrio (dejando la entrada constante).
 
-  - [ ok ] Determinar la estabilidad del sistema en el punto de equilibrio anterior a partir del cálculo
+  - [X] Determinar la estabilidad del sistema en el punto de equilibrio anterior a partir del cálculo
         de los valores propios.
   - [ ] Dibujar y explicar el retrato de fase (para cada par de variables de estado, dejando
         constantes las demás variables) obtenido con la función pplane8.m de Matlab. Determinar
