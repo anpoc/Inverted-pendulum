@@ -1,5 +1,6 @@
 %% Inicialization
 clear
+close all
 clc
 
 %% Non-Linear system
@@ -26,7 +27,6 @@ h2 = x3;
 
 % Equilibrium points
 equilibrium = solve([f1, f2, f3, f4], [x1, x2, x3, x4, u]);
-
 %% Linealization for theta0=pi and other vars 0 to 0
 % Equilibrium values
 n = 5;
