@@ -169,7 +169,7 @@
     \setcounter{subsubsection}{0}%
     \setcounter{paragraph}{0}%
     \def\thesection{}%
-    \def\thesectiondis{APPENDIX.}%
+    \def\thesectiondis{APPENDIX.}% 
     \def\thesubsection{\Alph{subsection}}%
     \refstepcounter{section}% update the \ref counter
 %    \@ifmtarg{#1}{\@IEEEappendixsavesection*{{\color{accessblue}\sectionAfont APPENDIX}}%
@@ -200,7 +200,7 @@
     % leave \section* as is
 %    \def\section{\@ifstar{\@IEEEappendixsavesection*}{% process the *-form
 %                    \refstepcounter{section}% or is a new section so,
-%                    \@IEEEprocessthesectionargument}}% process the argument
+%                    \@IEEEprocessthesectionargument}}% process the argument 
                                                  % of the normal form
 }
 
@@ -232,7 +232,7 @@
 % allow user to control short figure caption justification (left or center)
 \else%
 %\ifcenterfigcaptions \hbox to\hsize{\footnotesize\hfil\box\@tempboxa\hfil}%
-%\else
+%\else 
 \setbox\@tempboxa\hbox{{\color{accessblue}\figcapheadfont #1. \ }}%
 %\parbox[t]{\columnwidth}
 {\vss\raggedright\noindent\unhbox\@tempboxa\figcapfont#2\vss}%
@@ -353,8 +353,8 @@
 \def\headName{}
 \def\@pubid{}
 \def\markboth#1#2{\def\leftmark{#1}\def\rightmark{#2}}
-\def\thevol{2}
-\def\theyear{2018}
+\def\thevol{4}
+\def\theyear{2016}
 \def\vol#1{\gdef\thevol{#1}}
 \def\year#1{\gdef\theyear{#1}}
 \def\pubid#1{\gdef\@pubid{#1}}
@@ -704,7 +704,7 @@
 \end{minipage}}}}% end if optional argument supplied
 % Make an entry into the table of contents only if we have not done so before
 % one more biography
-% Make an entry for this name into the table of contents
+% Make an entry for this name into the table of contents 
 \addcontentsline{toc}{subsection}{#2}%
 % V1.6 properly handle if a new paragraph should occur while the
 % hanging indent is still active. Do this by redefining \par so
@@ -762,7 +762,7 @@
 \end{minipage}}}}% end if optional argument supplied
 % Make an entry into the table of contents only if we have not done so before
 % one more biography
-% Make an entry for this name into the table of contents
+% Make an entry for this name into the table of contents 
 \addcontentsline{toc}{subsection}{#2}%
 % V1.6 properly handle if a new paragraph should occur while the
 % hanging indent is still active. Do this by redefining \par so
@@ -811,7 +811,7 @@
 \fi%
 % one more biography
 \refstepcounter{biography}%
-% Make an entry for this name into the table of contents
+% Make an entry for this name into the table of contents 
 \addcontentsline{toc}{subsection}{#1}%
 \normalfont\biographyfont\interlinepenalty500%
 \vskip 4\baselineskip plus 1fil minus 0\baselineskip%
@@ -829,7 +829,7 @@
 \fi%
 % one more biography
 \refstepcounter{biography}%
-% Make an entry for this name into the table of contents
+% Make an entry for this name into the table of contents 
 \addcontentsline{toc}{subsection}{#1}%
 \normalfont\biographyfont\interlinepenalty500%
 \vskip 4\baselineskip plus 1fil minus 0\baselineskip%
@@ -869,7 +869,7 @@
 #1%
 \end{minipage}}}}% end if optional argument supplied
 % Make an entry into the table of contents only if we have not done so before
-% Make an entry for this name into the table of contents
+% Make an entry for this name into the table of contents 
 \addcontentsline{toc}{subsection}{#2}%
 % V1.6 properly handle if a new paragraph should occur while the
 % hanging indent is still active. Do this by redefining \par so
@@ -907,7 +907,7 @@
 % added biography without a photo environment
 \newenvironment{ebbiographynophoto}[1]{%
 % Make an entry into the table of contents only if we have not done so before
-% Make an entry for this name into the table of contents
+% Make an entry for this name into the table of contents 
 \addcontentsline{toc}{subsection}{#1}%
 \normalfont\biobodyfont\interlinepenalty500%
 \vspace{\baselineskip}%plus 1fil minus 0\baselineskip%
@@ -926,7 +926,7 @@
    \ClassError{ieeeaccess}
      {You have not used the command \string\EOD\space at the end of \MessageBreak
       last para in the document. I have reached end of the document searching for it}%
-     {Please put the macro \string\EOD\space in the end of the last para.
+     {Please put the macro \string\EOD\space in the end of the last para. 
      (End of last biography or end of last reference.)}%
    \fi%
   \fi%
