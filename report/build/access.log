@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  20 FEB 2018 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  20 FEB 2018 23:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -802,7 +802,10 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(build/access.aux)
+(build/access.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+)
 \openout1 = `access.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -901,32 +904,103 @@ e
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
 \c@lstlisting=\count132
-LaTeX Font Info:    Try loading font information for T1+phv on input line 28.
+<bullet.png, id=3, 12.045pt x 35.38219pt>
+File: bullet.png Graphic file (type png)
+<use bullet.png>
+Package pdftex.def Info: bullet.png  used on input line 32. on input line 32.
+Package pdftex.def Info: Requested size: 5.0pt x 14.6871pt on input line 32.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 
 LaTeX Font Warning: Font shape `T1/phv/n/n' undefined
-(Font)              using `T1/phv/m/n' instead on input line 28.
+(Font)              using `T1/phv/m/n' instead on input line 32.
 
-<bullet.png, id=3, 12.045pt x 35.38219pt>
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 33. on input line 33.
-Package pdftex.def Info: Requested size: 5.0pt x 14.6871pt on input line 33.
-File: bullet.png Graphic file (type png)
-<use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 37. on input line 37.
-Package pdftex.def Info: Requested size: 5.0pt x 14.6871pt on input line 37.
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
-<notaglineLogo.png, id=4, 169.38281pt x 42.91031pt>
-File: notaglineLogo.png Graphic file (type png)
-<use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 43. on input lin
-e 43.
-Package pdftex.def Info: Requested size: 91.32pt x 23.1352pt on input line 43.
+Package pdftex.def Info: bullet.png  used on input line 36. on input line 36.
+Package pdftex.def Info: Requested size: 5.0pt x 14.6871pt on input line 36.
+LaTeX Font Info:    Calculating math sizes for size <9.9> on input line 42.
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Calculating math sizes for size <6.6> on input line 42.
+
+Overfull \hbox (9.2679pt too wide) in paragraph at lines 42--42
+[]  
+ []
+
+
+Overfull \hbox (9.2679pt too wide) in paragraph at lines 42--42
+[]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--51
+
+ []
+
+<pendulo.PNG, id=4, 277.33612pt x 261.67763pt>
+File: pendulo.PNG Graphic file (type png)
+<use pendulo.PNG>
+Package pdftex.def Info: pendulo.PNG  used on input line 59. on input line 59.
+Package pdftex.def Info: Requested size: 138.66771pt x 130.83849pt on input lin
+e 59.
+File: pendulo.PNG Graphic file (type png)
+<use pendulo.PNG>
+Package pdftex.def Info: pendulo.PNG  used on input line 59. on input line 59.
+Package pdftex.def Info: Requested size: 138.66771pt x 130.83849pt on input lin
+e 59.
+
+Overfull \hbox (14.98064pt too wide) in paragraph at lines 64--88
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+<diagrama_cuerpo.PNG, id=6, 249.63263pt x 240.9pt>
+File: diagrama_cuerpo.PNG Graphic file (type png)
+<use diagrama_cuerpo.PNG>
+Package pdftex.def Info: diagrama_cuerpo.PNG  used on input line 94. on input l
+ine 94.
+Package pdftex.def Info: Requested size: 124.81601pt x 120.44969pt on input lin
+e 94.
+File: diagrama_cuerpo.PNG Graphic file (type png)
+<use diagrama_cuerpo.PNG>
+Package pdftex.def Info: diagrama_cuerpo.PNG  used on input line 94. on input l
+ine 94.
+Package pdftex.def Info: Requested size: 124.81601pt x 120.44969pt on input lin
+e 94.
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--106
+
+ []
+
+<Logo.png, id=7, 206.27063pt x 53.44969pt>
+File: Logo.png Graphic file (type png)
+<use Logo.png>
+Package pdftex.def Info: Logo.png  used on input line 107. on input line 107.
+Package pdftex.def Info: Requested size: 91.32pt x 23.66309pt on input line 107
+.
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -945,200 +1019,67 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [1
 
 
- <./notaglineLogo.png>]
-LaTeX Font Info:    Calculating math sizes for size <9.9> on input line 43.
-LaTeX Font Info:    Try loading font information for U+msa on input line 43.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 43.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Calculating math sizes for size <6.6> on input line 43.
-
-Overfull \hbox (9.2679pt too wide) in paragraph at lines 43--43
-[]  
- []
-
-
-Overfull \hbox (9.2679pt too wide) in paragraph at lines 43--43
-[]  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 49.
-
-LaTeX Warning: Reference `diagram' on page 2 undefined on input line 49.
-
-
-LaTeX Warning: Reference `tab: des' on page 2 undefined on input line 49.
-
-<pendulo.PNG, id=13, 277.33612pt x 261.67763pt>
-File: pendulo.PNG Graphic file (type png)
-<use pendulo.PNG>
-Package pdftex.def Info: pendulo.PNG  used on input line 53. on input line 53.
-Package pdftex.def Info: Requested size: 138.66771pt x 130.83849pt on input lin
-e 53.
-
-Overfull \hbox (14.98064pt too wide) in paragraph at lines 62--80
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `cuerpo' on page 2 undefined on input line 84.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
-
- []
-
-<diagrama_cuerpo.PNG, id=15, 249.63263pt x 240.9pt>
-File: diagrama_cuerpo.PNG Graphic file (type png)
-<use diagrama_cuerpo.PNG>
-Package pdftex.def Info: diagrama_cuerpo.PNG  used on input line 88. on input l
-ine 88.
-Package pdftex.def Info: Requested size: 124.81601pt x 120.44969pt on input lin
-e 88.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
-
- []
-
-<Logo.png, id=16, 206.27063pt x 53.44969pt>
-File: Logo.png Graphic file (type png)
-<use Logo.png>
-Package pdftex.def Info: Logo.png  used on input line 104. on input line 104.
-Package pdftex.def Info: Requested size: 91.32pt x 23.66309pt on input line 104
-.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[][]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[2
-
  <./Logo.png> <./bullet.png> <./pendulo.PNG> <./diagrama_cuerpo.PNG>]
-
-LaTeX Warning: Reference `eq: motion1' on page 3 undefined on input line 116.
-
-
-LaTeX Warning: Reference `eq: motion2' on page 3 undefined on input line 116.
-
-
-LaTeX Warning: Reference `eq: motion1' on page 3 undefined on input line 132.
-
-
-LaTeX Warning: Reference `eq: motion2' on page 3 undefined on input line 132.
-
-
-LaTeX Warning: Reference `subsub: var' on page 3 undefined on input line 132.
-
-
-Overfull \hbox (4.93097pt too wide) in alignment at lines 134--144
+Overfull \hbox (4.93097pt too wide) in alignment at lines 149--162
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
+
+ []
+
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 166.
+
+LaTeX Warning: Reference `eq: motion1' on page 2 undefined on input line 166.
+
+
+LaTeX Warning: Reference `eq: motion2' on page 2 undefined on input line 166.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
 
-LaTeX Warning: Reference `eq: motion1' on page 3 undefined on input line 147.
+LaTeX Warning: Reference `eq: sistema' on page 2 undefined on input line 180.
 
 
-LaTeX Warning: Reference `eq: motion2' on page 3 undefined on input line 147.
+LaTeX Warning: Reference `eq: sistema' on page 2 undefined on input line 183.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
- []
-
-
-LaTeX Warning: Reference `eq: x_4' on page 3 undefined on input line 156.
-
-
-LaTeX Warning: Reference `eq: x_2' on page 3 undefined on input line 156.
-
-
-LaTeX Warning: Reference `eq: sistema' on page 3 undefined on input line 156.
-
-
-LaTeX Warning: Reference `eq: x_2' on page 3 undefined on input line 156.
-
-
-LaTeX Warning: Reference `eq: x_4' on page 3 undefined on input line 156.
-
-
-LaTeX Warning: Reference `eq: sistema' on page 3 undefined on input line 156.
-
-
-LaTeX Warning: Reference `eq: salidas' on page 3 undefined on input line 159.
-
-
-LaTeX Warning: Reference `diagramabloques' on page 3 undefined on input line 17
-2.
-
-
-LaTeX Warning: Reference `subsistema' on page 3 undefined on input line 172.
-
-
-LaTeX Warning: Reference `eq: sistema' on page 3 undefined on input line 172.
-
-<diagrama_bloques.PNG, id=32, 135.80737pt x 60.225pt>
+<diagrama_bloques.PNG, id=27, 135.80737pt x 60.225pt>
 File: diagrama_bloques.PNG Graphic file (type png)
 <use diagrama_bloques.PNG>
-Package pdftex.def Info: diagrama_bloques.PNG  used on input line 176. on input
- line 176.
+Package pdftex.def Info: diagrama_bloques.PNG  used on input line 210. on input
+ line 210.
 Package pdftex.def Info: Requested size: 135.80704pt x 60.22484pt on input line
- 176.
-<diagrama_bloques_subsistema.PNG, id=33, 409.22888pt x 352.61737pt>
+ 210.
+File: diagrama_bloques.PNG Graphic file (type png)
+<use diagrama_bloques.PNG>
+Package pdftex.def Info: diagrama_bloques.PNG  used on input line 210. on input
+ line 210.
+Package pdftex.def Info: Requested size: 135.80704pt x 60.22484pt on input line
+ 210.
+<diagrama_bloques_subsistema.PNG, id=28, 409.22888pt x 352.61737pt>
 File: diagrama_bloques_subsistema.PNG Graphic file (type png)
 <use diagrama_bloques_subsistema.PNG>
-Package pdftex.def Info: diagrama_bloques_subsistema.PNG  used on input line 18
-2. on input line 182.
+Package pdftex.def Info: diagrama_bloques_subsistema.PNG  used on input line 21
+3. on input line 213.
 Package pdftex.def Info: Requested size: 245.53922pt x 211.57205pt on input lin
-e 182.
-
-Overfull \hbox (2.86566pt too wide) in paragraph at lines 182--184
- [][] 
- []
-
+e 213.
+File: diagrama_bloques_subsistema.PNG Graphic file (type png)
+<use diagrama_bloques_subsistema.PNG>
+Package pdftex.def Info: diagrama_bloques_subsistema.PNG  used on input line 21
+3. on input line 213.
+Package pdftex.def Info: Requested size: 245.53922pt x 211.57205pt on input lin
+e 213.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 190.
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 191.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 218.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 219.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
@@ -1147,59 +1088,61 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 LaTeX Font Warning: Font shape `TS1/ptm/n/n' undefined
 (Font)              using `TS1/ptm/m/n' instead
-(Font)              for symbol `textasteriskcentered' on input line 191.
+(Font)              for symbol `textasteriskcentered' on input line 219.
 
-LaTeX Info: Redefining \. on input line 197.
-LaTeX Info: Redefining \% on input line 197.
-File: notaglineLogo.png Graphic file (type png)
-<use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 197. on input li
-ne 197.
-Package pdftex.def Info: Requested size: 91.32pt x 23.1352pt on input line 197.
+Package epstopdf Info: Source file: <figures/nm/th.eps>
+(epstopdf)                    date: 2018-02-21 01:16:04
+(epstopdf)                    size: 262795 bytes
+(epstopdf)             Output file: <figures/nm/th-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-02-20 23:25:07
+(epstopdf)                    size: 90261 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/nm/th-eps-converte
+d-to.pdf figures/nm/th.eps>
+(epstopdf)             \includegraphics on input line 230.
+runsystem(repstopdf --outfile=figures/nm/th-eps-converted-to.pdf figures/nm/th.
+eps)...executed safely (allowed).
 
+Package epstopdf Info: Result file: <figures/nm/th-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-02-20 23:27:12
+(epstopdf)                    size: 90261 bytes.
+<figures/nm/th-eps-converted-to.pdf, id=29, pagebox=cropbox, 1445.4pt x 723.703
+75pt>
+File: figures/nm/th-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/nm/th-eps-converted-to.pdf>
+Package pdftex.def Info: figures/nm/th-eps-converted-to.pdf  used on input line
+ 230. on input line 230.
+Package pdftex.def Info: Requested size: 433.62335pt x 217.1128pt on input line
+ 230.
+Package epstopdf Info: Source file: <figures/nm/th.eps>
+(epstopdf)                    date: 2018-02-21 01:16:04
+(epstopdf)                    size: 262795 bytes
+(epstopdf)             Output file: <figures/nm/th-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-02-20 23:27:12
+(epstopdf)                    size: 90261 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/nm/th-eps-converte
+d-to.pdf figures/nm/th.eps>
+(epstopdf)             \includegraphics on input line 230.
+runsystem(repstopdf --outfile=figures/nm/th-eps-converted-to.pdf figures/nm/th.
+eps)...executed safely (allowed).
 
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-[3 <./diagrama_bloques.PNG> <./diagrama_bloques_subsistema.PNG>]
-
-LaTeX Warning: Reference `fig:numet' on page 4 undefined on input line 205.
-
-
-LaTeX Warning: Reference `fig:var-len' on page 4 undefined on input line 233.
-
-
-LaTeX Warning: Reference `tab: ptoseq' on page 4 undefined on input line 243.
-
-
-Overfull \hbox (4.96904pt too wide) in paragraph at lines 249--288
- [][] 
- []
-
+Package epstopdf Info: Result file: <figures/nm/th-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-02-20 23:27:12
+(epstopdf)                    size: 90261 bytes.
+File: figures/nm/th-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/nm/th-eps-converted-to.pdf>
+Package pdftex.def Info: figures/nm/th-eps-converted-to.pdf  used on input line
+ 230. on input line 230.
+Package pdftex.def Info: Requested size: 433.62335pt x 217.1128pt on input line
+ 230.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
-
- []
-
-File: bullet.png Graphic file (type png)
-<use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 329. on input line 329.
-
-Package pdftex.def Info: Requested size: 5.0pt x 14.6871pt on input line 329.
+<notaglineLogo.png, id=30, 169.38281pt x 42.91031pt>
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 330. on input li
-ne 330.
-Package pdftex.def Info: Requested size: 91.32pt x 23.1352pt on input line 330.
+Package pdftex.def Info: notaglineLogo.png  used on input line 249. on input li
+ne 249.
+Package pdftex.def Info: Requested size: 91.32pt x 23.1352pt on input line 249.
 
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1216,9 +1159,132 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[4] (build/access.aux
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+[2 <./notaglineLogo.png> <./diagrama_bloques.PNG>]
+Underfull \vbox (badness 1990) has occurred while \output is active []
+
+<figures/var/L/L.png, id=37, 1927.2pt x 935.495pt>
+File: figures/var/L/L.png Graphic file (type png)
+<use figures/var/L/L.png>
+Package pdftex.def Info: figures/var/L/L.png  used on input line 260. on input 
+line 260.
+Package pdftex.def Info: Requested size: 385.43318pt x 187.09567pt on input lin
+e 260.
+File: figures/var/L/L.png Graphic file (type png)
+<use figures/var/L/L.png>
+Package pdftex.def Info: figures/var/L/L.png  used on input line 260. on input 
+line 260.
+Package pdftex.def Info: Requested size: 385.43318pt x 187.09567pt on input lin
+e 260.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 260.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+LaTeX Info: Redefining \. on input line 268.
+LaTeX Info: Redefining \% on input line 268.
+File: notaglineLogo.png Graphic file (type png)
+<use notaglineLogo.png>
+Package pdftex.def Info: notaglineLogo.png  used on input line 268. on input li
+ne 268.
+Package pdftex.def Info: Requested size: 91.32pt x 23.1352pt on input line 268.
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[3 <./diagrama_bloques_subsistema.PNG> <./figures/nm/th-eps-converted-to.pdf>]
+<figures/var/m/m.png, id=49, 1927.2pt x 934.49126pt>
+File: figures/var/m/m.png Graphic file (type png)
+<use figures/var/m/m.png>
+Package pdftex.def Info: figures/var/m/m.png  used on input line 271. on input 
+line 271.
+Package pdftex.def Info: Requested size: 385.43318pt x 186.89494pt on input lin
+e 271.
+File: figures/var/m/m.png Graphic file (type png)
+<use figures/var/m/m.png>
+Package pdftex.def Info: figures/var/m/m.png  used on input line 271. on input 
+line 271.
+Package pdftex.def Info: Requested size: 385.43318pt x 186.89494pt on input lin
+e 271.
+
+Overfull \hbox (0.71898pt too wide) in paragraph at lines 282--324
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--333
+
+ []
+
+File: notaglineLogo.png Graphic file (type png)
+<use notaglineLogo.png>
+Package pdftex.def Info: notaglineLogo.png  used on input line 361. on input li
+ne 361.
+Package pdftex.def Info: Requested size: 91.32pt x 23.1352pt on input line 361.
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[4 <./figures/var/L/L.png>]
+File: bullet.png Graphic file (type png)
+<use bullet.png>
+Package pdftex.def Info: bullet.png  used on input line 369. on input line 369.
+
+Package pdftex.def Info: Requested size: 5.0pt x 14.6871pt on input line 369.
+LaTeX Info: Redefining \. on input line 370.
+LaTeX Info: Redefining \% on input line 370.
+File: notaglineLogo.png Graphic file (type png)
+<use notaglineLogo.png>
+Package pdftex.def Info: notaglineLogo.png  used on input line 370. on input li
+ne 370.
+Package pdftex.def Info: Requested size: 91.32pt x 23.1352pt on input line 370.
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[5
+
+ <./figures/var/m/m.png>] (build/access.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
 )
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1226,18 +1292,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 8027 strings out of 492990
- 109503 string characters out of 6135005
- 285337 words of memory out of 5000000
- 11412 multiletter control sequences out of 15000+600000
- 101754 words of font info for 141 fonts, out of 8000000 for 9000
+ 8091 strings out of 492990
+ 110473 string characters out of 6135005
+ 289738 words of memory out of 5000000
+ 11455 multiletter control sequences out of 15000+600000
+ 102375 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,72p,527b,1907s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,72p,273b,1907s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1249,16 +1312,17 @@ msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helv
-etic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/access.pdf (4 pages, 459171 bytes).
+ive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helve
+tic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on build/access.pdf (5 pages, 656070 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 121 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 44 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 59 words of extra memory for PDF output out of 10000 (max. 10000000)
 

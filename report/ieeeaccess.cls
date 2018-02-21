@@ -269,7 +269,7 @@
 \newsavebox\figbox
 \def\Figure{\@ifnextchar[{\@Figure}{\@Figure[t!]}}
 \def\@Figure[#1]{\@ifnextchar({\@@Figure[#1]}{\@@Figure[#1](topskip=0pt)}}
-\def\@@Figure[#1](#2){\@ifnextchar[{\@@@Figure[#1](#2)}{\@@@Figure[#1](#2)[scale=1]}}
+\def\@@Figure[#1](#2){\@ifnextchar[{\@@@Figure[#1](#2)}{\@@@Figure[#1](#2)[scale=0.5]}}
 %%%%%%%%%%%%
 \def\@@@Figure[#1](#2)[#3]#4#5{%
       \setkeys{figkeys}{#2}% Set new keys
