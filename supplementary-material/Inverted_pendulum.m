@@ -14,7 +14,7 @@ g = 9.8; %(m/s^2) gravity
 
 % System of equations
 % x1=x, x2=dx, x3=theta, x4=dtheta, u=F
-syms x1 x2 x3 x4 u; 
+syms x1 x2 x3 x4 u;
 denominator = (M+m)*(I+m*L^2)-m^2*L^2*cos(x3)^2;
 f1 = x2;
 f2 = ((I+m*L^2)*(u-b*x2+m*L*x4^2*sin(x3))+m^2*L^2*g*sin(x3)*cos(x3))/denominator;
@@ -28,7 +28,7 @@ h2 = x3;
 % Equilibrium points
 equilibrium = solve([f1, f2, f3, f4], [x1, x2, x3, x4, u]);
 %% Linealization for theta0=pi and other vars 0 to 0
-% Equilibrium values
+% Equilibrium val-5:0.1:5ues
 n = 5;
 x10 = equilibrium.x1(n);
 x20 = equilibrium.x2(n);
@@ -53,6 +53,13 @@ eigen = eig(A_a);
 sys = ss(A,B,C,D);
 [A,B,C,D] = ssdata(sys);
 
+%% Linealization comporation 
+% using the transformation
+T =  [1 0 0 0; 0 0 1 0; 0 1 0 0; 0 0 0 1];
+double(A_a) - T*A*T'
+double(B_a) - T*B
+double(C_a) - C*T'
+double(D_a) - D_a
 %% Linealization curve
 U = -5:0.1:5;
 X1 = repelem(0,length(U));

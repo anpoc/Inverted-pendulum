@@ -40,29 +40,5 @@ f = @(u, x) [x(2);
                    (M+m)*(I+m*L^2)-m^2*L^2*cos(x(3))^2]';
 
 %% Runge Kutta
-tf = 10;       % Simulation time
-h = 1/(25*tf); % Step size
 
-t = h:h:tf;
-
-% State variables
-xsrk = zeros(1/h * tf, 4);
-xsrk = [x0 th0 dx0 dth0; xsrk];
-
-u = 0;
-
-k = zeros(4, 4);
-
-for i=1:length(t)
-    k(1, :) = f(u, xsrk(i - 1,:));
-    k(2, :) = f(u, xsrk(i - 1,:) + h/2 * k(:, 1));
-    k(3, :) = f(u, xsrk(i - 1, :) + h/2 * k(:, 2));
-    k(4, :) = f(u, xsrk(i - 1, :) + h * k(:, 3));
-    
-    xsrk(i, :) = xsrk(i - 1, :) + h/6 * k(1, :) + 2 * k(2, :) + 2 * k(3, :) + k(4, :);
-end
-x1 = xskr(:, 1);
-x2 = xskr(:, 2);
-x3 = xskr(:, 3);
-x4 = xskr(:, 4);
  
