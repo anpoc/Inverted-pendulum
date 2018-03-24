@@ -1,6 +1,5 @@
 %% Inicialization
 clear
-close all
 clc
 
 %% Non-Linear system
@@ -27,6 +26,7 @@ h2 = x3;
 
 % Equilibrium points
 equilibrium = solve([f1, f2, f3, f4], [x1, x2, x3, x4, u]);
+
 %% Linealization for theta0=pi and other vars 0 to 0
 % Equilibrium val-5:0.1:5ues
 n = 5;
@@ -62,31 +62,93 @@ double(C_a) - C*T'
 double(D_a) - D_a
 %% Linealization curve
 U = -5:0.1:5;
-X1 = repelem(0,length(U));
-X3 = repelem(0,length(U));
+X1_nl = repelem(0,length(U));
+X3_nl = repelem(0,length(U));
 X1_l = repelem(0,length(U));
 X3_l = repelem(0,length(U));
 
 for i = 1:length(U)
     u = U(i);
     sim('InvertedPendulumWithLinealization');
-    X1(i) = x1.Data(end);
-    X3(i) = x3.Data(end);
+    X1_nl(i) = x1.Data(end);
+    X3_nl(i) = x3.Data(end);
     X1_l(i) = x1_x3_l.Data(end,1);
     X3_l(i) = x1_x3_l.Data(end,2);
 end
 
+%% Linealization curve with steps
+Step = -5:0.1:5;
+T = 0:100:100*(length(Step)-1);
+sim('InvertedPendulumWithLinealization_s')
+
+X1_steps = zeros(length(Step),2);
+X3_steps = zeros(length(Step),2);
+
+n = 1;
+for i = 1:length(signal.data)
+    if(signal.data(i)~=Step(n))
+        disp(i)
+        disp(X1.data(n,:))
+        X1_steps(n,:) = X1.data((i-1),:);
+        X3_steps(n,:) = X3.data((i-1),:);
+        n = n+1;
+    end
+end 
+
+figure;
+clf;
+plot(Step, X1_steps(:,1))
+hold on
+plot(Step, X1_steps(:,2))
+
+
 %% Plot
 figure;
 clf;
-plot(U, X3);
+plot(U, X3_nl);
 hold on
 plot(U, X3_l);
 
 figure;
 clf;
-plot(U, X1);
+plot(U, X3_nl);
 hold on
+plot(U, X3_l);
+line([0.9 0.9], [-0.1, 0.1]);
+line([-0.9 -0.9], [-0.1, 0.1]);
+
+%% Plot 
+% Changing input signal
+u = 0.8;
+sim('InvertedPendulumWithLinealization')
+figure;
+clf;
+plot(x1.Time, x1.Data);
+hold on
+plot(x1.Time, x1_x3_l.Data(:,1));
+
+figure;
+clf;
+plot(x3.Time, x3.Data);
+hold on
+plot(x3.Time, x1_x3_l.Data(:,2));
+
+u = 3;
+sim('InvertedPendulumWithLinealization')
+figure;
+clf;
+plot(x1.Time, x1.Data);
+hold on
+plot(x1.Time, x1_x3_l.Data(:,1));
+
+figure;
+clf;
+plot(x3.Time, x3.Data);
+hold on
+<<<<<<< HEAD
 plot(U, X1_l);
 %line([0.2 0.2], [0, Theta(find(abs(u - 0.2) < 0.001))]);
 %line([-0.2 -0.2], [0, Theta(find(abs(u + 0.2) < 0.001))]);
+=======
+plot(x3.Time, x1_x3_l.Data(:,2));
+>>>>>>> c22f97e382f2bbc36fff7c84ce6f07f8ca315f6e
