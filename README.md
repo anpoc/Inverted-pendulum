@@ -1,65 +1,59 @@
 # Inverted-pendulum
 
 ##### TODO
-  - [X] Describir y explicar el modelo, variables (entradas, salidas, estados)
-    y parámetros.
+  - [ ] Discretizar el modelo lineal en lazo abierto utilizando tres tiempos de
+    	muestreo diferentes (aproximación regular, buena y muy buena, según su
+  	criterio). Mostrar, analizar y explicar los modelos (continuo y
+	discretos) y sus respectivas respuestas a diferentes entradas.
 
-  - [X] Implementar el sistema en Simulink utilizando bloques y máscaras
-    (máscara con parámetros y condiciones iniciales del modelo). El diagrama
-    debe ser claro, disminuyendo al mínimo la longitud de las ramas entre
-    bloques, ubicando bien los bloques, conservando la dirección de los
-    integradores de izquierda a derecha, poniendo las entradas a la izquierda
-    y las salidas a la derecha, pueden utilizar colores si lo desean para
-    diferenciar variables u operaciones, se debe poner títulos adecuados a los
-    bloques y ocultar aquellos innecesarios.
+  - [ ] Encuentre la función de transferencia continua del sistema lineal
+        (planta). Si su sistema es MIMO, encuentre la matriz de funciones
+	de transferencias. Determine los polos, ceros y factor de ganancia
+	de la planta (para sistemas MIMO, polos, ceros y factor de ganancia
+	para cada par salida-entrada). De igual manera, determine la estabilidad
+	de la planta mediante la ubicación de sus polos y ceros en el plano s,
+	y finalmente, obtenga su respuesta al escalón y al impulso unitario
+	(para sistemas MIMO, realizar esto para cada par salida-entrada).
+	Compruebe la salida de estado estacionario aplicando el teorema de valor
+	final. Por último, analice los resultados.
 
-  - [ ] Validar el modelo con información conocida de la bibliografía. Es decir,
-    comparar los resultados del modelo obtenido con otros resultados previos
-    dados en otros trabajos escritos. No continuar hasta estar seguro de que el
-    modelo es correcto.
+  - [ ] Encuentre la función de transferencia discreta (planta) para el sistema
+      	del punto 1 que tenga la mejor aproximación. Si su sistema es MIMO,
+	encuentre la matriz de funciones de transferencias discretas.
+	Determine los polos, ceros y factor de ganancia de la planta
+	(para sistemas MIMO, polos, ceros y factor de ganancia para cada par
+	salida-entrada). De igual manera, determine la estabilidad de la planta
+	discreta mediante la ubicación de sus polos y ceros en el plano z, y
+	finalmente, obtenga su respuesta discreta al escalón y al impulso
+	unitario (para sistemas MIMO, realizar esto para cada par
+	salida-entrada). Compruebe la salida de estado estacionario aplicando
+	el teorema de valor final. Por último, analice los resultados.
 
-  - [ ] Simular y analizar el comportamiento del sistema con diferentes tipos de
-    entrada: escalón, seno, escalera. Mostrar figuras de las entradas aplicadas
-    y de las salidas obtenidas.
+  - [ ] Si su sistema es de orden superior, reduzca el sistema a un sistema de orden dos.
+  Posteriormente, grafique sus polos y ceros y compare las dos respuestas de los sistemas
+  ante un escalón unitario. Analice los resultados.
 
-  - [ ] Analizar el efecto del cambio de dos parámetros del modelo en la
-    respuesta temporal y presentar los resultados en una tabla. Comparar
-    en una sola figura los cambios con cada uno de los parámetros (dos
-    figuras en total). ¿Tiene sentido? ¿Qué significa?
+  - [ ] Discretice la planta continua en Simulink utilizando un retenedor de orden cero utilizando
+  el Ts de la mejor aproximación del punto 1. Posteriormente compare el sistema discreto
+  obtenido con la mejor aproximación del punto 1 y analice los resultados. Si su sistema es
+  MIMO, realice el ejercicio para sólo un par salida-entrada.
 
-  - [X] Programar en Matlab la solución numérica de la ecuación de estado
-    utilizando los métodos de Euler y Runge-Kutta, y comparar (en una sola
-    figura) las respuestas temporales por los métodos anteriores y Simulink.
+  - [ ]  Utilizando el método de Routh-Hurwitz, analice la estabilidad de la planta para dos
+  parámetros diferentes. Posteriormente, aplique un control con un regulador estático (u = k
+  x error) y determine los valores para los cuales el sistema es estable e inestable. Analice los
+  resultados.
+  
+  - [ ]  Utilizando el método de Jury, analice la estabilidad de la planta discreta del punto 1 con la
+  mejor aproximación, después de aplicarle un control con un regulador estático (u = k x
+  error), y determine los valores para los cuales el sistema es estable e inestable. Analice los
+  resultados. Finalmente, compare y analice los resultados del punto 6 y 7.
 
-  - [X] Trazar la curva de linealidad para cada par entrada/estado en Simulink,
-    aplicando escalones o una señal escalera. De igual manera obtener la curva
-    de linealidad enviando diferentes entradas desde Matlab a Simulink y
-    exportando los datos de salida de Simulink a Matlab. Finalmente, comparar
-    las dos curvas y explicar las diferencias.
-
-  - [X] Para una entrada constante de interés de la curva de linealidad,
-    calcular los puntos de equilibrio del sistema con la función vpasolve de
-    Matlab y analíticamente, y comparar los resultados obtenidos con los de
-    la curva de linealidad. Si hay varios puntos de equilibrio, explicar el
-    resultado en términos de las condiciones iniciales.
-
-  - [ ] En el punto de equilibrio anterior de la curva de linealidad, linealizar
-    el sistema utilizando cualquier método de Matlab/Simulink y analíticamente.
-    Comparar (en una sola figura) las respuestas del sistema linealizado y el
-    sistema no lineal en el punto de operación cambiando
-    + la señal de entrada por dentro del rango de linealidad
-    + la señal de entrada por fuera del rango de linealidad
-    + las condiciones iniciales cerca al punto de equilibrio (dejando la entrada
-    constante).
-
-  - [X] Determinar la estabilidad del sistema en el punto de equilibrio anterior
-    a partir del cálculo de los valores propios.
-  - [ ] Dibujar y explicar el retrato de fase (para cada par de variables de
-    estado, dejando constantes las demás variables) obtenido con la función
-    pplane8.m de Matlab. Determinar el tipo de cada punto de equilibrio con las
-    opciones de la función pplane8.m y validarla analíticamente con el cálculo
-    de los valores propios del modelo lineal en cada punto.
-
+  - [ ]  Utilizando el método del lugar de las raíces, sintonice un controlador PD y un controlador
+  PID para la planta en lazo cerrado de tal manera que logre mejores comportamientos que
+  los del sistema en lazo abierto. Grafique los polos y ceros de la función de transferencia de
+  lazo cerrado después de sintonizar los controladores y compruebe los resultados ante la
+  respuesta escalón unitario y diferentes entradas. Compare los resultados del controlador
+  PD con los del PID, analice los resultados y concluya.
 
 ##### Contributors:
 
