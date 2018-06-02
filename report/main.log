@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.5.10)  2 JUN 2018 17:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.5.10)  2 JUN 2018 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1773,19 +1773,7 @@ Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
 . Defining command \homework with sig. '' on line 764.
 .................................................
 )
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-
-
-Package natbib Warning: The `cite' package should not be used
-(natbib)                with natbib. Use option `sort' instead.
-
-\bibhang=\skip55
-\bibsep=\skip56
-LaTeX Info: Redefining \cite on input line 694.
-LaTeX Info: Redefining \citenum on input line 708.
-\c@NAT@ctr=\count153
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
@@ -1851,15 +1839,15 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen186
-\Hy@linkcounter=\count154
-\Hy@pagecounter=\count155
+\Hy@linkcounter=\count153
+\Hy@pagecounter=\count154
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count156
+\Hy@SavedSpaceFactor=\count155
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1871,7 +1859,7 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count157
+\c@Hy@tempcnt=\count156
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -1879,7 +1867,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen187
-\Fld@menulength=\count158
+\Fld@menulength=\count157
 \Field@Width=\dimen188
 \Fld@charsize=\dimen189
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -1891,24 +1879,24 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count159
-\c@Item=\count160
-\c@Hfootnote=\count161
+\Hy@abspage=\count158
+\c@Item=\count159
+\c@Hfootnote=\count160
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count162
-\c@bookmark@seq@number=\count163
+\Fld@listcount=\count161
+\c@bookmark@seq@number=\count162
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip57
+\Hy@SectionHShift=\skip55
 )
 (./main.aux
 LaTeX Info: Redefining \. on input line 36.
@@ -1917,19 +1905,6 @@ LaTeX Info: Redefining \% on input line 36.
 
 LaTeX Warning: Label `fig:controlS' multiply defined.
 
-
-! Package natbib Error: Bibliography not compatible with author-year citations.
-
-(natbib)                Press <return> to continue in numerical citation style.
-
-
-See the natbib package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.266 ...and\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-? 
 )
 \openout1 = `main.aux'.
 
@@ -1959,16 +1934,16 @@ LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count164
+\scratchcounter=\count163
 \scratchdimen=\dimen190
 \scratchbox=\box47
-\nofMPsegments=\count165
-\nofMParguments=\count166
+\nofMPsegments=\count164
+\nofMParguments=\count165
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count167
+\MPscratchCnt=\count166
 \MPscratchDim=\dimen191
-\MPnumerator=\count168
-\makeMPintoPDFobject=\count169
+\MPnumerator=\count167
+\makeMPintoPDFobject=\count168
 \everyMPtoPDFconversion=\toks26
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1985,7 +1960,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count170
+\c@lstlisting=\count169
 \AtBeginShipoutBox=\box48
 Package hyperref Info: Link coloring OFF on input line 22.
 
@@ -1995,7 +1970,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count171
+\c@section@level=\count170
 )
 LaTeX Info: Redefining \ref on input line 22.
 LaTeX Info: Redefining \pageref on input line 22.
@@ -2064,7 +2039,7 @@ Overfull \hbox (10.45844pt too wide) in paragraph at lines 54--78
  [][] 
  []
 
-<pendulo.PNG, id=199, 277.33612pt x 261.67763pt>
+<pendulo.PNG, id=203, 277.33612pt x 261.67763pt>
 File: pendulo.PNG Graphic file (type png)
  <use pendulo.PNG>
 Package pdftex.def Info: pendulo.PNG used on input line 83.
@@ -2094,7 +2069,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 90.
 
-<diagrama_cuerpo.PNG, id=202, 249.63263pt x 240.9pt>
+<diagrama_cuerpo.PNG, id=206, 249.63263pt x 240.9pt>
 File: diagrama_cuerpo.PNG Graphic file (type png)
  <use diagrama_cuerpo.PNG>
 Package pdftex.def Info: diagrama_cuerpo.PNG used on input line 93.
@@ -2185,7 +2160,7 @@ Underfull \hbox (badness 3281) in paragraph at lines 186--187
 []\OT1/ptm/m/n/10 El mo-de-lo del p[]endu-lo in-ver-ti-do se im-ple-men-ta en
  []
 
-<diagrama_bloques_subsistema.PNG, id=241, 409.22888pt x 352.61737pt>
+<diagrama_bloques_subsistema.PNG, id=245, 409.22888pt x 352.61737pt>
 File: diagrama_bloques_subsistema.PNG Graphic file (type png)
 
 <use diagrama_bloques_subsistema.PNG>
@@ -2251,14 +2226,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
-<figures/x1seno.png, id=271, 1053.9375pt x 790.45313pt>
+<figures/x1seno.png, id=275, 1053.9375pt x 790.45313pt>
 File: figures/x1seno.png Graphic file (type png)
 
 <use figures/x1seno.png>
 Package pdftex.def Info: figures/x1seno.png used on input line 218.
 (pdftex.def)             Requested size: 189.70056pt x 142.27542pt.
 
-<figures/x3seno.png, id=272, 1053.9375pt x 790.45313pt>
+<figures/x3seno.png, id=276, 1053.9375pt x 790.45313pt>
 File: figures/x3seno.png Graphic file (type png)
 
 <use figures/x3seno.png>
@@ -2269,13 +2244,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-<figures/x1cos.png, id=273, 1053.9375pt x 790.45313pt>
+<figures/x1cos.png, id=277, 1053.9375pt x 790.45313pt>
 File: figures/x1cos.png Graphic file (type png)
  <use figures/x1cos.png>
 Package pdftex.def Info: figures/x1cos.png used on input line 233.
 (pdftex.def)             Requested size: 189.70056pt x 142.27542pt.
 
-<figures/x3cos.png, id=274, 1053.9375pt x 790.45313pt>
+<figures/x3cos.png, id=278, 1053.9375pt x 790.45313pt>
 File: figures/x3cos.png Graphic file (type png)
  <use figures/x3cos.png>
 Package pdftex.def Info: figures/x3cos.png used on input line 239.
@@ -2311,14 +2286,14 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 244.
 [3 <./diagrama_bloques_subsistema.PNG> <./figures/x1seno.png (PNG copy)> <./fig
 ures/x3seno.png (PNG copy)> <./figures/x1cos.png (PNG copy)>]
-<figures/x1step.png, id=290, 1053.9375pt x 790.45313pt>
+<figures/x1step.png, id=294, 1053.9375pt x 790.45313pt>
 File: figures/x1step.png Graphic file (type png)
 
 <use figures/x1step.png>
 Package pdftex.def Info: figures/x1step.png used on input line 248.
 (pdftex.def)             Requested size: 189.70056pt x 142.27542pt.
 
-<figures/x3step.png, id=291, 1053.9375pt x 790.45313pt>
+<figures/x3step.png, id=295, 1053.9375pt x 790.45313pt>
 File: figures/x3step.png Graphic file (type png)
 
 <use figures/x3step.png>
@@ -2329,14 +2304,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
-<figures/x1sierra.png, id=293, 1053.9375pt x 790.45313pt>
+<figures/x1sierra.png, id=297, 1053.9375pt x 790.45313pt>
 File: figures/x1sierra.png Graphic file (type png)
 
 <use figures/x1sierra.png>
 Package pdftex.def Info: figures/x1sierra.png used on input line 263.
 (pdftex.def)             Requested size: 189.70056pt x 142.27542pt.
 
-<figures/x3sierra.png, id=294, 1053.9375pt x 790.45313pt>
+<figures/x3sierra.png, id=298, 1053.9375pt x 790.45313pt>
 File: figures/x3sierra.png Graphic file (type png)
 
 <use figures/x3sierra.png>
@@ -2387,7 +2362,7 @@ Package epstopdf Info: Source file: <nm.eps>
 .eps>
 (epstopdf)             \includegraphics on input line 279.
 Package epstopdf Info: Output file is already uptodate.
-<nm-eps-converted-to.pdf, id=296, 1442.38875pt x 709.65125pt>
+<nm-eps-converted-to.pdf, id=300, 1442.38875pt x 709.65125pt>
 File: nm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use nm-eps-converted-to.pdf>
@@ -2467,7 +2442,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--310
 
  []
 
-<L.png, id=317, 1927.2pt x 935.495pt>
+<L.png, id=321, 1927.2pt x 935.495pt>
 File: L.png Graphic file (type png)
  <use L.png>
 Package pdftex.def Info: L.png used on input line 314.
@@ -2477,7 +2452,7 @@ Overfull \hbox (37.06754pt too wide) in paragraph at lines 314--315
  [][] 
  []
 
-<m.png, id=318, 1927.2pt x 934.49126pt>
+<m.png, id=322, 1927.2pt x 934.49126pt>
 File: m.png Graphic file (type png)
  <use m.png>
 Package pdftex.def Info: m.png used on input line 320.
@@ -2669,7 +2644,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 472.
-[6] <curva_lin.png, id=350, 1053.9375pt x 790.45313pt>
+[6] <curva_lin.png, id=354, 1053.9375pt x 790.45313pt>
 File: curva_lin.png Graphic file (type png)
  <use curva_lin.png>
 Package pdftex.def Info: curva_lin.png used on input line 476.
@@ -2691,7 +2666,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
-<curva_lin_esc.png, id=352, 1053.9375pt x 790.45313pt>
+<curva_lin_esc.png, id=356, 1053.9375pt x 790.45313pt>
 File: curva_lin_esc.png Graphic file (type png)
  <use curva_lin_esc.png>
 Package pdftex.def Info: curva_lin_esc.png used on input line 485.
@@ -2721,14 +2696,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 492.
 
-<Graficaslvsnl/u0_5.png, id=355, 1053.9375pt x 790.45313pt>
+<Graficaslvsnl/u0_5.png, id=359, 1053.9375pt x 790.45313pt>
 File: Graficaslvsnl/u0_5.png Graphic file (type png)
 
 <use Graficaslvsnl/u0_5.png>
 Package pdftex.def Info: Graficaslvsnl/u0_5.png used on input line 499.
 (pdftex.def)             Requested size: 200.2502pt x 150.18765pt.
 
-<Graficaslvsnl/u-2.png, id=356, 1053.9375pt x 790.45313pt>
+<Graficaslvsnl/u-2.png, id=360, 1053.9375pt x 790.45313pt>
 File: Graficaslvsnl/u-2.png Graphic file (type png)
 
 <use Graficaslvsnl/u-2.png>
@@ -2772,21 +2747,21 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 510.
  [7 <./curva_lin.png (PNG copy)> <./curva_lin_esc.png (PNG copy)> <./Graficaslv
 snl/u0_5.png (PNG copy)> <./Graficaslvsnl/u-2.png (PNG copy)>] <Graficaslvsnl/u
-6.png, id=368, 1053.9375pt x 790.45313pt>
+6.png, id=372, 1053.9375pt x 790.45313pt>
 File: Graficaslvsnl/u6.png Graphic file (type png)
 
 <use Graficaslvsnl/u6.png>
 Package pdftex.def Info: Graficaslvsnl/u6.png used on input line 514.
 (pdftex.def)             Requested size: 200.2502pt x 150.18765pt.
 
-<Graficaslvsnl/u6dif.png, id=369, 1053.9375pt x 790.45313pt>
+<Graficaslvsnl/u6dif.png, id=373, 1053.9375pt x 790.45313pt>
 File: Graficaslvsnl/u6dif.png Graphic file (type png)
 
 <use Graficaslvsnl/u6dif.png>
 Package pdftex.def Info: Graficaslvsnl/u6dif.png used on input line 520.
 (pdftex.def)             Requested size: 200.2502pt x 150.18765pt.
 
-<Graficaslvsnl/u-100.png, id=370, 1053.9375pt x 790.45313pt>
+<Graficaslvsnl/u-100.png, id=374, 1053.9375pt x 790.45313pt>
 File: Graficaslvsnl/u-100.png Graphic file (type png)
 
 <use Graficaslvsnl/u-100.png>
@@ -2808,14 +2783,14 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 529.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 529.
-<Graficaslvsnl/t0_01.png, id=375, 1053.9375pt x 790.45313pt>
+<Graficaslvsnl/t0_01.png, id=379, 1053.9375pt x 790.45313pt>
 File: Graficaslvsnl/t0_01.png Graphic file (type png)
 
 <use Graficaslvsnl/t0_01.png>
 Package pdftex.def Info: Graficaslvsnl/t0_01.png used on input line 535.
 (pdftex.def)             Requested size: 200.2502pt x 150.18765pt.
 
-<Graficaslvsnl/t0_1.png, id=376, 1053.9375pt x 790.45313pt>
+<Graficaslvsnl/t0_1.png, id=380, 1053.9375pt x 790.45313pt>
 File: Graficaslvsnl/t0_1.png Graphic file (type png)
 
 <use Graficaslvsnl/t0_1.png>
@@ -2880,7 +2855,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 567--569
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<tf/pzmap_G.jpg, id=393, 1405.25pt x 1053.9375pt>
+<tf/pzmap_G.jpg, id=397, 1405.25pt x 1053.9375pt>
 File: tf/pzmap_G.jpg Graphic file (type jpg)
  <use tf/pzmap_G.jpg>
 Package pdftex.def Info: tf/pzmap_G.jpg used on input line 592.
@@ -2890,7 +2865,7 @@ Overfull \hbox (0.93408pt too wide) in paragraph at lines 592--593
  [][] 
  []
 
-<tf/step.jpg, id=399, 1405.25pt x 1053.9375pt>
+<tf/step.jpg, id=403, 1405.25pt x 1053.9375pt>
 File: tf/step.jpg Graphic file (type jpg)
  <use tf/step.jpg>
 Package pdftex.def Info: tf/step.jpg used on input line 600.
@@ -2900,7 +2875,7 @@ Overfull \hbox (0.93408pt too wide) in paragraph at lines 600--601
  [][] 
  []
 
-<tf/impulse.jpg, id=400, 1405.25pt x 1053.9375pt>
+<tf/impulse.jpg, id=404, 1405.25pt x 1053.9375pt>
 File: tf/impulse.jpg Graphic file (type jpg)
  <use tf/impulse.jpg>
 Package pdftex.def Info: tf/impulse.jpg used on input line 606.
@@ -2955,7 +2930,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 618--619
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<tf/pzmap_Gr.jpg, id=418, 1405.25pt x 1053.9375pt>
+<tf/pzmap_Gr.jpg, id=422, 1405.25pt x 1053.9375pt>
 File: tf/pzmap_Gr.jpg Graphic file (type jpg)
  <use tf/pzmap_Gr.jpg>
 Package pdftex.def Info: tf/pzmap_Gr.jpg used on input line 652.
@@ -2965,7 +2940,7 @@ Overfull \hbox (0.93408pt too wide) in paragraph at lines 652--653
  [][] 
  []
 
-<tf/step_Gr.jpg, id=421, 1405.25pt x 1053.9375pt>
+<tf/step_Gr.jpg, id=425, 1405.25pt x 1053.9375pt>
 File: tf/step_Gr.jpg Graphic file (type jpg)
  <use tf/step_Gr.jpg>
 Package pdftex.def Info: tf/step_Gr.jpg used on input line 661.
@@ -2975,7 +2950,7 @@ Overfull \hbox (0.93408pt too wide) in paragraph at lines 661--662
  [][] 
  []
 
-<tf/impulse_Gr.jpg, id=422, 1405.25pt x 1053.9375pt>
+<tf/impulse_Gr.jpg, id=426, 1405.25pt x 1053.9375pt>
 File: tf/impulse_Gr.jpg Graphic file (type jpg)
  <use tf/impulse_Gr.jpg>
 Package pdftex.def Info: tf/impulse_Gr.jpg used on input line 667.
@@ -3033,7 +3008,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 672.
 [10 <./tf/impulse.jpg> <./tf/pzmap_Gr.jpg>]
-<tf/pzmap_Gd.jpg, id=438, 1405.25pt x 1053.9375pt>
+<tf/pzmap_Gd.jpg, id=442, 1405.25pt x 1053.9375pt>
 File: tf/pzmap_Gd.jpg Graphic file (type jpg)
  <use tf/pzmap_Gd.jpg>
 Package pdftex.def Info: tf/pzmap_Gd.jpg used on input line 676.
@@ -3043,7 +3018,7 @@ Overfull \hbox (0.93408pt too wide) in paragraph at lines 676--677
  [][] 
  []
 
-<tf/pzmap_Gd_1.jpg, id=439, 1405.25pt x 1053.9375pt>
+<tf/pzmap_Gd_1.jpg, id=443, 1405.25pt x 1053.9375pt>
 File: tf/pzmap_Gd_1.jpg Graphic file (type jpg)
  <use tf/pzmap_Gd_1.jpg>
 Package pdftex.def Info: tf/pzmap_Gd_1.jpg used on input line 682.
@@ -3053,7 +3028,7 @@ Overfull \hbox (0.93408pt too wide) in paragraph at lines 682--683
  [][] 
  []
 
-<tf/pzmap_Gd_2.jpg, id=440, 1405.25pt x 1053.9375pt>
+<tf/pzmap_Gd_2.jpg, id=444, 1405.25pt x 1053.9375pt>
 File: tf/pzmap_Gd_2.jpg Graphic file (type jpg)
  <use tf/pzmap_Gd_2.jpg>
 Package pdftex.def Info: tf/pzmap_Gd_2.jpg used on input line 688.
@@ -3063,7 +3038,7 @@ Overfull \hbox (0.93408pt too wide) in paragraph at lines 688--689
  [][] 
  []
 
-<tf/impulse_Gd.jpg, id=441, 1405.25pt x 1053.9375pt>
+<tf/impulse_Gd.jpg, id=445, 1405.25pt x 1053.9375pt>
 File: tf/impulse_Gd.jpg Graphic file (type jpg)
  <use tf/impulse_Gd.jpg>
 Package pdftex.def Info: tf/impulse_Gd.jpg used on input line 694.
@@ -3073,7 +3048,7 @@ Overfull \hbox (0.93408pt too wide) in paragraph at lines 694--695
  [][] 
  []
 
-<tf/impulse_Gd_1.jpg, id=442, 1405.25pt x 1053.9375pt>
+<tf/impulse_Gd_1.jpg, id=446, 1405.25pt x 1053.9375pt>
 File: tf/impulse_Gd_1.jpg Graphic file (type jpg)
 
 <use tf/impulse_Gd_1.jpg>
@@ -3084,7 +3059,7 @@ Overfull \hbox (0.93408pt too wide) in paragraph at lines 700--701
  [][] 
  []
 
-<tf/impulse_Gd_2.jpg, id=443, 1405.25pt x 1053.9375pt>
+<tf/impulse_Gd_2.jpg, id=447, 1405.25pt x 1053.9375pt>
 File: tf/impulse_Gd_2.jpg Graphic file (type jpg)
 
 <use tf/impulse_Gd_2.jpg>
@@ -3133,7 +3108,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 728.
 [11 <./tf/step_Gr.jpg> <./tf/impulse_Gr.jpg> <./tf/pzmap_Gd.jpg> <./tf/pzmap_Gd
-_1.jpg>] <tf/step_Gd.jpg, id=457, 1405.25pt x 1053.9375pt>
+_1.jpg>] <tf/step_Gd.jpg, id=461, 1405.25pt x 1053.9375pt>
 File: tf/step_Gd.jpg Graphic file (type jpg)
 
 <use tf/step_Gd.jpg>
@@ -3201,7 +3176,7 @@ ps>
 (epstopdf)             \includegraphics on input line 760.
 Package epstopdf Info: Output file is already uptodate.
 
-<5-eps-converted-to.pdf, id=465, 1442.38875pt x 742.775pt>
+<5-eps-converted-to.pdf, id=469, 1442.38875pt x 742.775pt>
 File: 5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 5-eps-converted-to.pdf>
@@ -3234,14 +3209,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 773--775
 
  []
 
-<control/Capture.PNG, id=470, 324.0105pt x 127.07475pt>
+<control/Capture.PNG, id=474, 324.0105pt x 127.07475pt>
 File: control/Capture.PNG Graphic file (type png)
 
 <use control/Capture.PNG>
 Package pdftex.def Info: control/Capture.PNG used on input line 779.
 (pdftex.def)             Requested size: 178.20631pt x 69.89131pt.
 
-<control/Controlador_pid_svg.png, id=472, 2007.5pt x 836.12375pt>
+<control/Controlador_pid_svg.png, id=476, 2007.5pt x 836.12375pt>
 File: control/Controlador_pid_svg.png Graphic file (type png)
 
 <use control/Controlador_pid_svg.png>
@@ -3278,7 +3253,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 789--790
 
  []
 
-<control/k_G2.jpg, id=474, 1405.25pt x 1053.9375pt>
+<control/k_G2.jpg, id=478, 1405.25pt x 1053.9375pt>
 File: control/k_G2.jpg Graphic file (type jpg)
  <use control/k_G2.jpg>
 Package pdftex.def Info: control/k_G2.jpg used on input line 794.
@@ -3321,7 +3296,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 802--803
 
  []
 
-<control/PID_G2.jpg, id=498, 1405.25pt x 1053.9375pt>
+<control/PID_G2.jpg, id=502, 1405.25pt x 1053.9375pt>
 File: control/PID_G2.jpg Graphic file (type jpg)
  <use control/PID_G2.jpg>
 Package pdftex.def Info: control/PID_G2.jpg used on input line 809.
@@ -3366,7 +3341,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 813--814
 
  []
 
-<control/k_G1.jpg, id=500, 1405.25pt x 1053.9375pt>
+<control/k_G1.jpg, id=504, 1405.25pt x 1053.9375pt>
 File: control/k_G1.jpg Graphic file (type jpg)
  <use control/k_G1.jpg>
 Package pdftex.def Info: control/k_G1.jpg used on input line 818.
@@ -3391,7 +3366,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 824--825
 
  []
 
-<control/step_Gc1.jpg, id=503, 1405.25pt x 1053.9375pt>
+<control/step_Gc1.jpg, id=507, 1405.25pt x 1053.9375pt>
 File: control/step_Gc1.jpg Graphic file (type jpg)
 
 <use control/step_Gc1.jpg>
@@ -3459,7 +3434,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 858--859
 
  []
 
-<Bode/BodeG1.png, id=517, 1053.9375pt x 790.45313pt>
+<Bode/BodeG1.png, id=521, 1053.9375pt x 790.45313pt>
 File: Bode/BodeG1.png Graphic file (type png)
  <use Bode/BodeG1.png>
 Package pdftex.def Info: Bode/BodeG1.png used on input line 863.
@@ -3472,7 +3447,7 @@ Overfull \hbox (11.48373pt too wide) in paragraph at lines 863--864
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bode/BodeG2.png, id=518, 1053.9375pt x 790.45313pt>
+<Bode/BodeG2.png, id=522, 1053.9375pt x 790.45313pt>
 File: Bode/BodeG2.png Graphic file (type png)
  <use Bode/BodeG2.png>
 Package pdftex.def Info: Bode/BodeG2.png used on input line 869.
@@ -3552,7 +3527,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 915--916
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bode/stepGdd.png, id=532, 1053.9375pt x 790.45313pt>
+<Bode/stepGdd.png, id=536, 1053.9375pt x 790.45313pt>
 File: Bode/stepGdd.png Graphic file (type png)
  <use Bode/stepGdd.png>
 Package pdftex.def Info: Bode/stepGdd.png used on input line 939.
@@ -3585,18 +3560,13 @@ ted-to.pdf Figuras/entrada.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/entrada-eps-converted-to.pdf, id=534, 1433.355pt x 707.64375pt>
+<Figuras/entrada-eps-converted-to.pdf, id=538, 1433.355pt x 707.64375pt>
 File: Figuras/entrada-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figuras/entrada-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/entrada-eps-converted-to.pdf used on input lin
 e 14.
 (pdftex.def)             Requested size: 214.99397pt x 106.14198pt.
-
-
-Package natbib Warning: Citation `9780750300582' on page 16 undefined on input 
-line 28.
-
 Package epstopdf Info: Source file: <Figuras/filtro-angle.eps>
 (epstopdf)                    date: 2018-06-05 09:49:22
 (epstopdf)                    size: 292260 bytes
@@ -3608,7 +3578,8 @@ Package epstopdf Info: Source file: <Figuras/filtro-angle.eps>
 onverted-to.pdf Figuras/filtro-angle.eps>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
-<Figuras/filtro-angle-eps-converted-to.pdf, id=538, 1433.355pt x 707.64375pt>
+
+<Figuras/filtro-angle-eps-converted-to.pdf, id=543, 1433.355pt x 707.64375pt>
 File: Figuras/filtro-angle-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figuras/filtro-angle-eps-converted-to.pdf>
@@ -3626,7 +3597,7 @@ rted-to.pdf Figuras/filtro-c.eps>
 (epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figuras/filtro-c-eps-converted-to.pdf, id=539, 1445.4pt x 725.71124pt>
+<Figuras/filtro-c-eps-converted-to.pdf, id=544, 1445.4pt x 725.71124pt>
 File: Figuras/filtro-c-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figuras/filtro-c-eps-converted-to.pdf>
@@ -3700,13 +3671,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 968--969
 
  []
 
-<Bode/PID.png, id=552, 1053.9375pt x 790.45313pt>
+<Bode/PID.png, id=558, 1053.9375pt x 790.45313pt>
 File: Bode/PID.png Graphic file (type png)
  <use Bode/PID.png>
 Package pdftex.def Info: Bode/PID.png used on input line 973.
 (pdftex.def)             Requested size: 189.70056pt x 142.27542pt.
 
-<Bode/se_al_controlada.png, id=554, 1053.9375pt x 790.45313pt>
+<Bode/se_al_controlada.png, id=560, 1053.9375pt x 790.45313pt>
 File: Bode/se_al_controlada.png Graphic file (type png)
 
 <use Bode/se_al_controlada.png>
@@ -3760,7 +3731,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1006--1007
 
  []
 
-<Bode/PIDD.png, id=584, 1053.9375pt x 790.45313pt>
+<Bode/PIDD.png, id=590, 1053.9375pt x 790.45313pt>
 File: Bode/PIDD.png Graphic file (type png)
  <use Bode/PIDD.png>
 Package pdftex.def Info: Bode/PIDD.png used on input line 1011.
@@ -3769,7 +3740,7 @@ Package pdftex.def Info: Bode/PIDD.png used on input line 1011.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Bode/senalz.png, id=587, 1053.9375pt x 790.45313pt>
+<Bode/senalz.png, id=593, 1053.9375pt x 790.45313pt>
 File: Bode/senalz.png Graphic file (type png)
  <use Bode/senalz.png>
 Package pdftex.def Info: Bode/senalz.png used on input line 1021.
@@ -3826,7 +3797,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 12.
  [18 <./Bode/se_al_controlada.png (PNG copy)> <./Bode/PIDD.png (PNG copy)> <./B
 ode/senalz.png (PNG copy)>]
-<Figuras/control-modelo.jpg, id=599, 1290.32062pt x 539.01375pt>
+<Figuras/control-modelo.jpg, id=605, 1290.32062pt x 539.01375pt>
 File: Figuras/control-modelo.jpg Graphic file (type jpg)
 
 <use Figuras/control-modelo.jpg>
@@ -3862,10 +3833,6 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 39.
 
-Package natbib Warning: Citation `Feo1989' on page 19 undefined on input line 3
-9.
-
-
 Underfull \hbox (badness 1688) in paragraph at lines 39--51
  []\OT1/ptm/m/it/10 3. GRASP: [][][] \OT1/ptm/m/n/10 El m[]eto-do GRASP fue in-
 tro-du-ci-do
@@ -3886,7 +3853,7 @@ Package epstopdf Info: Source file: <Figuras/controlS.eps>
 rted-to.pdf Figuras/controlS.eps>
 (epstopdf)             \includegraphics on input line 58.
 Package epstopdf Info: Output file is already uptodate.
-<Figuras/controlS-eps-converted-to.pdf, id=601, 1445.4pt x 771.88374pt>
+<Figuras/controlS-eps-converted-to.pdf, id=608, 1445.4pt x 771.88374pt>
 File: Figuras/controlS-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figuras/controlS-eps-converted-to.pdf>
@@ -3950,7 +3917,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 1035--1036
 
  []
 
-(./main.bbl)
+(./main.bbl
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 2.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 2.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 2.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 2.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 2.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 2.
+)
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1042.
 Package babel Info: Redefining spanish shorthand >>
@@ -4167,9 +4147,6 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 223.
 [22])
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1044.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1044.
@@ -4195,7 +4172,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1044.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1044.
-[23
+ [23
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1044.
@@ -4206,28 +4183,22 @@ LaTeX Info: Redefining \% on input line 36.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1044.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1044.
 
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: CB9FFDF9D6DB77458B327644811E1B33;3591.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: BAAEBD882F7AB28E8F332DAF832FFE0C;3532
-(rerunfilecheck)             After:  B465103AAB19B7FD64126E01D8BC43C0;3538.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1044.
  ) 
 Here is how much of TeX's memory you used:
- 18365 strings out of 493029
- 304719 string characters out of 6136234
- 385320 words of memory out of 5000000
- 21440 multiletter control sequences out of 15000+600000
- 52060 words of font info for 116 fonts, out of 8000000 for 9000
+ 18030 strings out of 493029
+ 300502 string characters out of 6136234
+ 380090 words of memory out of 5000000
+ 21108 multiletter control sequences out of 15000+600000
+ 51460 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,19n,42p,10399b,436s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,19n,42p,10398b,436s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
@@ -4250,10 +4221,10 @@ rr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (23 pages, 5028135 bytes).
+Output written on main.pdf (23 pages, 5027947 bytes).
 PDF statistics:
- 767 PDF objects out of 1000 (max. 8388607)
- 631 compressed objects within 7 object streams
- 184 named destinations out of 1000 (max. 500000)
- 636 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 773 PDF objects out of 1000 (max. 8388607)
+ 637 compressed objects within 7 object streams
+ 186 named destinations out of 1000 (max. 500000)
+ 644 words of extra memory for PDF output out of 10000 (max. 10000000)
 
