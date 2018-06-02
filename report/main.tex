@@ -1013,15 +1013,12 @@ A diferencia del cumplimiento de los requerimientos para la planta continua, los
 
 Si se mira la Figura \ref{fig:senald} que muestra la señal controlada, se observa una disminución en el orden inicial, en el cual para este caso sería de $10^3$, implicando menor esfuerzo de control en comparación con el PID continuo. Frente a la respuesta temporal al escalón unitario, se concluye que actúa de forma más eficaz el controlador continuo, mas lleva mayor esfuerzo de control. En la vida real, esto se interpreta en términos de costos, e.d. resulta más costoso aplicar un controlador continuo a uno discreto. Por otro lado, en términos de sintonización manual es más fácil hacerlo cuando se trabaja en tiempo continuo. 
 
-Finalmente, en la Figura \ref{fig:senal} se observa la señal controlada que le entra a cada planta. Se puede ver cómo inicialmente esta es del orden de $10^5$ y se lleva a 0 rápidamente, lo cual implica un gran esfuerzo de control.
-
 \begin{figure}[!h]
 \caption{Señal controlada\label{fig:senald}}
   \centering
 \includegraphics[scale=0.18]{Bode/senalz.png}
 \end{figure}
 
-Por último, al comparar el controlador discreto con el controlador continuo para ambas 
 \input{controlS}
 
 
