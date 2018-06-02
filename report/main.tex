@@ -611,6 +611,7 @@ El teorema del valor final se utiliza cuando es necesario determinar el comporta
 \[
 \lim_{s \to 0} sG(s)
 \]
+Hay dos formas de encontrar el límite señalado. Una es por medio de la función de MATLAB \textit{dcgain()} y la otra es aplicando el límite.
 Los resultados obtenidos de la evaluación son $\infty$ y 0 para $G_1$ y $G_2$, respectivamente. Esto quiere decir que la salida $y_1$ diverge; mientras que, la salida $y_2$ converge a 0, es decir, posee estado estacionario. 
 
 \subsection{Reducción de la función de transferencia continua a segundo orden}
@@ -809,7 +810,7 @@ En la Figura \ref{fig:rlocusG2PID} se muestra el lugar de las raíces para $G_{2
 \end{figure}
 
 \subsection{Análisis control para $G_1$}
-Para el análisis de control de $G_1$ sólo se estudia la posibilidad de introducir un controlador estático. Más adelante se analizará la inserción de implementar un controlador PID. En la Figura \ref{fig:rlocusG1} se muestra el lugar de las raíces de $G_1$. Dada la posibilidad de mover el polo que se encuentra en (0,0) y que la estabilidad del sistema no se deteriora, sino que mejora, se decide aplicar un controlador estático con $k=0.00357$.\\   
+Para el análisis de control de $G_1$ sólo se estudia la posibilidad de introducir un controlador estático. Más adelante se analiza la inserción de un controlador PID. En la Figura \ref{fig:rlocusG1} se muestra el lugar de las raíces de $G_1$. Dada la posibilidad de mover el polo que se encuentra en (0,0) y que la estabilidad del sistema no se deteriora, sino que mejora, se decide aplicar un controlador estático con $k=0.00357$.\\   
 
 \begin{figure}[h!]
 \caption{Lugar de las raíces para $G_1$.\label{fig:rlocusG1}}
@@ -1029,9 +1030,11 @@ El péndulo invertido es un modelo no lineal que posee múltiples puntos de equi
 
 La reducción de orden de la función de transferencia del sistema hace que las respuestas temporales de la salida $y_2$ pierdan su carácter oscilatorio, debido a que al realizar la reducción sólo quedan polos reales, desapareciendo los polos complejos conjugados. A pesar de ello, el carácter críticamente estable del sistema se conserva. De igual forma ocurre cuando se discretiza el sistema. En los tres tiempos de muestreo propuestos $0.21, 0.73,1.26$ la estabilidad del sistema y la forma de las respuestas temporales se conservan. Se comprueba que a menor tiempo de muestro, más se asemejan las funciones de transferencia en tiempo continuo y en tiempo discreto.\\
 
+En términos de control, para la función de transferencia asociada a la salida $y_2$, ni la aplicación de un controlador estático ni de un controlador PID muestra ser beneficiosa; por el contrario, tienden a desestabilizar la planta. Lo que no pasa con función de transferencia relacionada a la salida $y_1$, la cual al implementarse un controlador estático mejora su estabilidad. Esto se observa notablemente en la convergencia en la respuesta temporal a la señal escalón unitario. Por otro lado, se observa que la salida $y_1$ es de estabilización lenta, razón por la cuál cuando se trata de hacer converger rápidamente comienza a oscilar.\\
 
-Por último, para la función de transferencia asociada a la salida $y_2$, ni la aplicación de un controlador estático ni de un controlador PID muestra ser beneficiosa; por el contrario, tienden a desestabilizar la planta. Lo que no pasa con función de transferencia relacionada a la salida $y_1$, la cual al implementarse un controlador estático mejora su estabilidad. Esto se observa notablemente en la convergencia en la respuesta temporal a la señal escalón unitario.  
+Por último, los filtros son importantes a la hora de proteger un sistema, dado que a ciertas frecuencias de entrada el sistema puede colapsar, como ocurre con un puente al entrar en resonancia. También se concluye que los controladores PID digitales, aunque son más difíciles de sintonizar manualmente, poseen un esfuerzo de control menor al de los PID continuos. Dicho esfuerzo de control se podría interpretar como un gasto o costo, razón por la cuál la implementación de controladores PID digitales puede considerarse una opción viable.\\
 
+Para futuro trabajo se propone ampliar y profundizar en el estudio de control, especialmente aquellos que no requieren de la sintonización manual, sino tienen regulación automática. Y esto no sólo sería interesante en este trabajo, sino que podría tener expansión a otros, dado que las técnicas de control al controlador (no manual) son relativamente nuevas y la exploración de control de sistemas SIMO podría terminar aportando al área. Además, estudiar el sistema en el punto de equilibrio ($0,0,\pi,0,0$), e.d., teniendo el péndulo sobre la vertical superior, y en los restantes. 
 
 \bibliography{ref}
 \bibliographystyle{IEEEtran}
