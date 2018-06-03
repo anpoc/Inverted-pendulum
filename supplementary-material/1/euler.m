@@ -1,4 +1,4 @@
-% Euler Method
+1% Euler Method
 % Author: Santiago Hincapie
 % Course: CM0440
 % Date: 17/02/2017
@@ -102,6 +102,7 @@ x3RK = xsrk(3, :);
 sim('InvertedPendulumNM')
 figure;
 hold on;
-plot(te, x3E, 'k')
-plot(trk, x3RK, 'r')
-plot(x3, 'b')
+plot(te, x3E, 'y')
+plot(trk, x3RK, 'c')
+plot(x3, 'g-')
+label('')
