@@ -1,0 +1,236 @@
+\subsection{Espacios de estados generalizados}
+\[
+  \bm{x} =
+  \begin{pmatrix}
+    x_1\\
+    x_2\\
+    x_3\\
+    x_4
+  \end{pmatrix}
+  \in \mathbb{R}^{4 \times 1} \quad
+  \bm{u} = u \in \mathbb{R}^{1 \times 1} \quad
+  \bm{y} =
+  \begin{pmatrix}
+    y_1\\
+    y_2
+  \end{pmatrix}
+  \in \mathbb{R}^{2 \times 1}
+\]
+\[
+  \bm{A} =
+  \begin{pmatrix}
+    0 & 1    & 0   & 0 \\
+    0 & -c_2 & c_1  & 0 \\
+    0 & 0    & 0   & 1 \\
+    0 & c_4  & c_3  & 0
+  \end{pmatrix}
+  \in \mathbb{R}^{4 \times 4}
+  \quad
+  \bm{B} =
+  \begin{pmatrix}
+    0   \\
+    c_5 \\
+    0   \\
+    -c_6
+  \end{pmatrix}
+  \in \mathbb{R}^{4 \times 1}
+\]
+\[
+  \bm{C} =
+  \begin{pmatrix}
+    1 & 0 & 0 & 0 \\
+    0 & 0 & 1 & 0
+  \end{pmatrix}
+  \in \mathbb{R}^{2 \times 4} \quad
+  \bm{D} = \bm{0} \in \mathbb{R}^{2 \times 1}
+\]
+
+donde
+
+\[ c_1 = \frac{m^2 g l^2}{\alpha} \quad c_2 = \frac{(I + m l^2) b}{\alpha} \quad
+   c_3 = \frac{m g l (M + m)}{\alpha} \]
+\[ c_4 = \frac{m l b}{\alpha} \quad c_5 = \frac{I + m l^2}{\alpha} \quad
+   c_6 = \frac{m l}{\alpha} \]
+\[\alpha = I(M + m) + m M l^2\]
+\\
+Para los valores definidos de los parámetros obtenemos que las constantes $c_i$
+toman los siguientes valores.
+\[ c_1 = 2.6745 \quad c_2 = 0.1818 \quad c_3 = 31.2030 \]
+\[ c_4 = 0.4545 \quad c_5 = 1.8182 \quad c_6 = 4.5455 \]
+
+
+\subsection{Funciones de transferencia generalizadas}
+Para hallar la matriz de funciones de transferencia debemos utilizar el metodo
+expuesto por~\cite{dorf67}, el cual la define como
+\[ \vb*{G}(s) = \vb*{C} (s \vb*{I} - \vb*{A})^{-1} \vb*{B} - \vb*{D}. \]
+\\
+
+Para esto definamos inicialmente la matriz
+\[ s \bm{I} - \bm{A} =
+  \begin{pmatrix}
+     s & -1 & 0 & 0 \\
+     0 & c_2+s & -c_1 & 0 \\
+     0 & 0 & s & -1 \\
+     0 & -c_4 & c_3 & s \\
+  \end{pmatrix},
+  \] que tiene como determinante
+\begin{align*}
+  p = p(s)
+  &= \det(s \bm{I} - \bm{A})\\
+  &= s [s^2 (s + c_2) - (c_1 c_4 - (s + c_2) c_3)]\\
+  &= s [(s + c_2) (s^2 + c_3) - c_1 c_4]\\
+  &= s [s^3 + c_2 s^2 + c_3 s + (c_2 c_3 - c_1 c_4)].
+\end{align*}
+Con la matriz y el determinante podemos hallar la inversa de la siguienta manera
+\[ (s \bm{I} - \bm{A})^{-1} = \frac{1}{p(s)} \operatorname{adj} (s \bm{I} - \bm{A})^{-1} \]
+Donde la inversa de $(s \bm{I} - \bm{A})^{-1}$ está dada por:
+\[ \frac{1}{p}
+  \begin{pmatrix}
+    p s^{-1} & s^2+c_3 & c_1 s & c_1 \\
+    0 & s^3+ c_3 s & c_{1} s^2 & c_{1} s \\
+    0 & c_{4} s & s^3+c_{2} s^2 & s^2+c_{2} s \\
+    0 & c_{4} s^2 & -c_{3} s^2-c_{2} c_{3} s+c_{1} c_{4} s & s^3+c_{2} s^2 \\
+  \end{pmatrix}
+\]
+\\
+
+Lo que nos permite hallar la matriz de funciones de transferencia
+
+\begin{align*}
+  C (s \bm{I} - \bm{A})^{-1} B
+  &= \frac{1}{p(s)}
+    \begin{pmatrix}
+      c_5 s^2 - (c_1 c_6 - c_3 c_5)\\
+      s (-c_6 s + (c_4 c_5 - c_2 c_6))
+    \end{pmatrix}\\
+  &=
+    \begin{pmatrix}
+      \dfrac{c_5 s^2 - (c_1 c_6 - c_3 c_5)}{s^4 + c_2 s^3 + c_3 s^2 + (c_2 c_3 - c_1 c_4)s}\\
+      \dfrac{-c_6 s + (c_4 c_5 - c_2 c_6)}{s^3 + c_2 s^2 + c_3 s + (c_2 c_3 - c_1 c_4)}
+    \end{pmatrix}
+\end{align*}
+\\
+
+Reemplazando los valores de $c_i$ obtenemos que:
+\[ \vb*{G}(s) =
+  \begin{pmatrix}
+    \dfrac{1.818 s^2 + 44.58}{s^4 + 0.1818 s^3 + 31.2 s^2 + 4.458 s}\\
+    \dfrac{-4.545 s}{s^3 + 0.1818 s^2 + 31.2 s + 4.458}
+  \end{pmatrix}.
+\]
+
+\subsection{Estabilidad}
+\subsubsection{Estabilidad del modelo}
+Análisis de estabilidad lineal en tiempo continuo en el punto de operación seleccionado. El polinomio característico está dado por
+\begin{equation}
+  \label{eq:polcar}
+  \begin{split}
+  p(s)
+  &= s^4 + 0.1818 s^3 + 31.2030 s^2 + 4.4576 s\\
+  &= s (s^3 + 0.1818 s^2 + 31.2030 s + 4.4576) \\
+\end{split}
+\end{equation}
+\textbf{}
+
+Aplicando el método de Routh-Hurwitz al polinomio sin $\frac{p(s)}{s}$ obtenemos que
+\[
+  \begin{array}{c|cc}
+    s^3 & 1 & 31.2030\\
+    s^2 & 0.1818 & 4.4576\\
+    s^1 & 6.6864 &\\
+    s^0 & 4.4576 &
+  \end{array}
+\]
+\\
+
+Si se quisiera determinar la estabilidad por el método indirecto de Lyapunov\cite{Murray:1994:MIR:561828}, se obtendría un valor propio en cero lo cual no permite concluir.\\
+
+Para hacerlo de forma general, es importante notar que el denominador para la función de transferencia asociada a la posición del carro es \[ p(s) \] mientras que, el denominador para la función de transferencia asociada al ángulo del péndulo es \[ \frac{p(s)}{s} \]
+
+Para determinar la estabilidad de cada función de transferencia en lazo abierto por separado es necesario mirar la ubicación de los polos. El denominador de la función de transferencia de la posición del carro es \[ s^4 + c_2 s^3 + c_3 s^2 + (c_2 c_3 - c_1 c_4)s, \] función que no cumple las condiciones necesarias de Routh-Hurwitz debido que hay un $a_i = 0$.\\
+
+Para la función de transferencia asociada al ángulo del péndulo tenemos que el denominador es \[ s^3 + c_2 s^2 + c_3 s + (c_2 c_3 - c_1 c_4). \] Una verificación inicial de las condiciones necesarias nos lleva a concluir que $c_2 > 0$, $c_3 > 0$, ambas por definicion. Adicionalmente tenemos que
+\begin{align*}
+  c_2 c_3 - c_1 c_4
+  &= \frac{(I + ml^2)b}{\alpha} \frac{mgl(M + m)}{\alpha} - \frac{m^2 g l^2}{\alpha} \frac{mlb}{\alpha}\\
+  &= \frac{mgl}{\alpha} [(I + m l^2) (M + m) - m^2 l ^2] b\\
+  &= \frac{mgl}{\alpha} [I(M + m) + m M l^2] b\\
+  &> 0.
+\end{align*}
+
+Como las condiciones necesarias son satisfechas, es necesario plantear el arreglo de Routh-Hurwitz.
+
+\[
+  \begin{array}{c|cc}
+    s^3 & 1 & c_3\\
+    s^2 & c_2 & (c_2 c_3 - c_1 c_4)\\
+    s^1 & \dfrac{c_1 c_4}{c_2} &\\
+    s^0 & c_2 c_3 - c_1 c_4 &
+  \end{array}
+\]
+
+El arreglo de Routh-Hurwitz, en este caso, nos plantea una condición adicional, es decir, \[ \frac{c_1 c_4}{c_2} > 0, \] condición que se cumple debido a que $c_i > 0 \ \forall i$.\\
+
+\subsubsection{Rango de estabilidad para un parámetro}
+Se toma inicialmente el parámetro $b$ ---coeficiente de fricción del carro--- para determinar la estabilidad del sistema en función de éste. Para esto, se definen unas constantes auxiliares
+\[ c_2^* = \frac{I + m l^2}{\alpha} \implies c_2 = c_2^* b \]
+\[ c_4^* = \frac{m l}{\alpha} \implies c_4 = c_4^* b \]
+
+En este caso, el denominador de la función de transferencia de la posición del carro es \[ s^4 + c_2^* b s^3 + c_3 s^2 + (c_2^* c_3 - c_1 c_4^*) b s, \] que, al igual que el caso anterior, no cumple las condiciones necesarias de Routh-Hurwitz.\\
+
+Para la función de transferencia asociada al ángulo del péndulo se tiene que el denominador es \[ s^3 + c_2^* b s^2 + c_3 s + (c_2^* c_3 - c_1 c_4^*) b. \] Un análisis similar permite determinar que las condiciones necesarias se cumplen y que para las condiciones suficientes se necesita que \[ \frac{c_1 c_4*}{c_2} > 0, \] condición que se sigue cumpliendo debido a que $c_4^* > 0$.\\
+
+Se puede concluir que para $b \in \mathbb{R}^+$ el sistema es estable.\\
+
+
+Se toma ahora el parámetro $g$ ---gravedad--- para determinar la estabilidad del sistema en función de éste. Para esto, nuevamente, se definen unas constantes auxiliares
+\[ c_1^* = \frac{m^2 l^2}{\alpha} \implies c_1 = c_1^* g \]
+\[ c_3^* = \frac{m l (M + m)}{\alpha} \implies c_3 = c_3^* g \]
+
+En este caso, el denominador de la función de transferencia de la posición del carro es
+\[ s^4 + c_2 s^3 + c_3^* g s^2 + (c_2 c_3^* - c_1^* c_4) g s, \] que, al igual que el caso
+anterior, no cumple las condiciones necesarias de Routh-Hurwitz.\\
+
+Para la función de transferencia asociada al ángulo del péndulo se tiene que el
+denominador es \[ s^3 + c_2 s^2 + c_3^* s + (c_2 c_3^* - c_1^* c_4) g. \]
+Un análisis similar permite determinar que las condiciones necesarias se
+cumplen y que para las condiciones suficientes se necesita que
+\[ \frac{c_1^* c_4}{c_2} > 0, \] condición que se sigue cumpliendo debido a que $c_1^* > 0$.\\
+
+Se puede concluir que para $g \in \mathbb{R}^+$ el sistema es estable.
+
+\subsection{Estabilidad del modelo discretizado}
+Para analizar la estabilidad del sistema discretizado, se emplea el método de Jury, un método popular, equivalente en discreto al método de Routh-Hurwitz (trabajado anteriormente). Se utiliza para determinar
+el número de raíces de un polinomio que se encuentran dentro del circulo unitario.\\
+
+
+Se considera inicialmente la función de transferencia discreta, presentada anteriormente
+\[
+\dfrac{0.03866 z^3 - 0.001061 z^2 - 6.895e^{-05} z + 0.03817}{z^4 - 2.743 z^3 + 3.484 z^2 - 2.704 z + 0.9625}\]
+\[
+\dfrac{-0.08809 z^2 + 0.001042 z + 0.08705}{z^3 - 1.743 z^2 + 1.741 z - 0.9625}
+\]
+Ahora veamos los polinomios característicos de cada una de ellas,
+\[
+P_1(z) = {z^4 - 2.743 z^3 + 3.484 z^2 - 2.704 z + 0.9625}\]
+\[
+P_2(z) = {z^3 - 1.743 z^2 + 1.741 z - 0.9625}
+\]
+
+Veamos primero si $P_1$ cumple las condiciones necesarias para la estabilidad.
+\begin{enumerate}
+\item $P_1(1) > 0 \implies 1^4 - 2.743 1^3 + 3.484 1^2 - 2.704 1 + 0.9625 = 0 \ngtr 0$
+\item $(-1)^nP(-1)>0 \implies (-1)^4 - 2.743 (-1)^3 + 3.484 (-1)^2 + 2.704 + 0.9625 = 10.8935 > 0$
+\item $|a_n| < a_0 \implies 0.9625 < 1$ 
+\end{enumerate}
+\textbf{}
+
+Veamos ahora si $P_2$ cumple las condiciones necesarias para la estabilidad
+\begin{enumerate}
+\item $P_2(1) > 0 \implies 1^3 - 1.743 1^2 + 1.741 - 0.9625 = 0.0355 > 0$
+\item $(-1)^nP(-1)>0 \implies (-1)^3 - 1.743 (-1)^2 - 1.741 - 0.9625 = -5.4465 < 0$
+\item $|a_n| < a_0 \implies 0.9625 < 1$ 
+\end{enumerate}
+\textbf{}
+
+Inicialmente, se puede decir que $P_2$ cumple las condiciones necesarias para la estabilidad, lo cual se relaciona fuermente con los resultados presentados anteriormente. Por otro lado, de $P_1$ se puede decir que el sistema no es estable, dado que no cumple la primera condición necesaria; sin embargo, anteriormente se había llegado a la conclusión de que dicho sistema es críticamente estable, lo cual se puede deducir al ver que $P_1$ evaluado en 1 se hace 0. %%ahora, al momento de realizar los computos, tanto matlab como nosotros realizamos diferentes aproximaciones, las cuales pudieron desplazar ligeramente los polos del sistema, haciéndolo inestable. De esto podemos concluir que le método es bastante sensible a este tipo de modificaciones.%% %%No es verdad%%

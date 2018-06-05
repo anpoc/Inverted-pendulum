@@ -1,0 +1,38 @@
+\BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.2}{Descripci\363n del modelo}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{An\341lisis diagrama de cuerpo libre y sistema de ecuaciones}{section.2}% 3
+\BOOKMARK [1][-]{section.3}{Sistema no lineal}{}% 4
+\BOOKMARK [2][-]{subsection.3.1}{Espacio de estados no lineal}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.2}{Salidas}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.3}{Diagrama de bloques del sistema}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Simulaci\363n}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Simulaciones con diferentes tipos de entrada}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Soluci\363n num\351rica}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Sensibilidad param\351trica}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Linealizaci\363n}{}% 12
+\BOOKMARK [2][-]{subsection.5.1}{Linealizaci\363n anal\355tica}{section.5}% 13
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Linealizaci\363n con Simulink}{subsection.5.1}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Estabilidad en el punto de equilibrio X0=0, U0=0}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.3}{Curva de linealidad para la variable x3}{section.5}% 16
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Curva de linealidad con Step}{subsection.5.3}% 17
+\BOOKMARK [1][-]{section.6}{Variaci\363n de entradas y condiciones iniciales: Modelo lineas vs. modelo no lineal}{}% 18
+\BOOKMARK [2][-]{subsection.6.1}{Variaci\363n de entrada dentro del rango de linealidad}{section.6}% 19
+\BOOKMARK [2][-]{subsection.6.2}{Variaci\363n de entrada fuera del rango de linealidad}{section.6}% 20
+\BOOKMARK [2][-]{subsection.6.3}{Variaci\363n condiciones iniciales}{section.6}% 21
+\BOOKMARK [1][-]{section.7}{Funci\363n de transferencia}{}% 22
+\BOOKMARK [2][-]{subsection.7.1}{Funci\363n de transferencia continua}{section.7}% 23
+\BOOKMARK [2][-]{subsection.7.2}{Reducci\363n de la funci\363n de transferencia continua a segundo orden}{section.7}% 24
+\BOOKMARK [2][-]{subsection.7.3}{Funci\363n de transferencia discreta}{section.7}% 25
+\BOOKMARK [2][-]{subsection.7.4}{Validaci\363n de la discretizaci\363n en Simulink}{section.7}% 26
+\BOOKMARK [1][-]{section.8}{Control}{}% 27
+\BOOKMARK [2][-]{subsection.8.1}{An\341lisis control para G2}{section.8}% 28
+\BOOKMARK [2][-]{subsection.8.2}{An\341lisis control para G1}{section.8}% 29
+\BOOKMARK [1][-]{section.9}{Routh-Hurwitz y Jury}{}% 30
+\BOOKMARK [1][-]{section.10}{Conclusiones}{}% 31
+\BOOKMARK [1][-]{section*.12}{Referencias}{}% 32
+\BOOKMARK [2][-]{subsection.10.1}{Espacios de estados generalizados}{section*.12}% 33
+\BOOKMARK [2][-]{subsection.10.2}{Funciones de transferencia generalizadas}{section*.12}% 34
+\BOOKMARK [2][-]{subsection.10.3}{Estabilidad}{section*.12}% 35
+\BOOKMARK [3][-]{subsubsection.10.3.1}{Estabilidad del modelo}{subsection.10.3}% 36
+\BOOKMARK [3][-]{subsubsection.10.3.2}{Rango de estabilidad para un par\341metro}{subsection.10.3}% 37
+\BOOKMARK [2][-]{subsection.10.4}{Estabilidad del modelo discretizado}{section*.12}% 38
