@@ -12,10 +12,10 @@ El controlador es fundamentalmente una suma de controles PID diferentes controla
 cada uno de estos controladores recibe como señal de entrada la salida de la respectiva
 variable que se desea controlar, para despues alimentar el sistema con la suma de estos.
 Formalmente el control puede ser definido de la siguiente manera:
-\[
-  u(t) = K_{pc}e_c(t) + K_{ic}\int_0^te_c(t')dt' + K_{dc}\dfrac{de_{c}(t)}{dt} +
-   K_{pa}e_a(t) + K_{ia}\int_0^te_a(t')dt' + K_{da}\dfrac{de_{a}(t)}{dt}  
-\]
+\begin{align*}
+  u(t) =& K_{pc}e_c(t) + K_{ic}\int_0^te_c(t')dt' + K_{dc}\dfrac{de_{c}(t)}{dt} + \\
+   & K_{pa}e_a(t) + K_{ia}\int_0^te_a(t')dt' + K_{da}\dfrac{de_{a}(t)}{dt}  
+\end{align*}
 
 donde $u(t)$ es la accion del controlador, $K_{pc}, K_{ic}, K_{dc}$, son las respectivas
 contantes del controlador para el carrito y de manera simiar $K_{pa}, K_{ia}, K_{da}$,

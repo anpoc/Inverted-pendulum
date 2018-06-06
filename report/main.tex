@@ -544,6 +544,7 @@ Las Figuras \ref{fig:t0.01} y \ref{fig:t0.1} son producidas con pequeñas variac
 \end{figure}
 
 \section{Función de transferencia}
+\label{sec:tf}
 La función de transferencia es un modelo matemático que relaciona la respuesta de un sistema con una señal de entrada por medio de un cociente. Para un sistema en tiempo continuo, viene a ser la transformada de Laplace de la salida sobre la transformada de Laplace de la entrada, bajo la suposición de condiciones iniciales nulas \cite{wiki:state} . Mientras que, para uno en tiempo discreto, se realiza el mismo procedimiento que en tiempo continuo pero con la transformada Z.   
 
 \subsection{Función de transferencia continua}\label{sub:ftc}
@@ -703,7 +704,7 @@ La función de transferencia continua fue discretizada en tres tiempos de muestr
 \begin{figure}[h!]
 \caption{Respuesta temporal de las salidas a la entrada impulso unitario para la f. de transferencia de $T=0.73$\label{fig:impulseGd1}}
   \centering
-\includegraphics[scale=0.18]{tf/impulse_Gd_1.jpg}
+%\includegraphics[scale=0.18]{tf/impulse_Gd_1.jpg}
 \end{figure}
 
 \begin{figure}[h!]
@@ -860,7 +861,137 @@ Los polos, ceros y ganancia se especifican en el Cuadro \ref{tab: pzg tf1e}. Se 
 \end{figure}
 \vspace{20pt}
 \section{Routh-Hurwitz y Jury}
-Esta sección se encuentra anexada al final del documento. La razón por la que se encuentra anexa es debido la forma en cómo desarrolla, con un procedimiendo matemático detallado.
+Esta sección se encuentra anexada al final del documento. La razón por la que se encuentra anexa es debido la forma en cómo desarrolla,  con un procedimiento matemático detallado.
+
+\section{Bode}
+
+En esta sección se analiza la respuesta frecuencial del sistema. En las Figuras \ref{fig:bode1} y \ref{fig:bode2} se presenta el diagrama de Bode para la función de transferencia $G_1$ y $G_2$, definidas en la sección \ref{sub:ftc}, respectivamente. Las características más importantes del diagrama se resumen en el Cuadro \ref{tab:freq}. $M_g$ y $M_f$ hacen referencia al margen de cruce de la ganancia o magnitud y de la fase donde $M_g$ se define como $20*log_{10}(1/G)$ con $G$ la ganancia en el cruce de fase de -180. Por otro lado las $w$ hacen referencia a frecuencias: $w_b$ es el ancho de banda que se define como $G(0)-3$dB, es decir, como tres decibeles por debajo del valor de la magnitud en la frecuencia 0; $w_{cg}$ y $w_{cf}$ son las frecuencias de cruce de ganancia y de fase en el orden mencionado. En $w_{cg}$ se puede incrementar o reducir la ganancia por el valor indicado en $M_g$ antes de perder estabilidad. Dado que $M_g \not< 0$ para ninguna de las $G_i$ entonces la estabilidad no es más sensible a una reducción en la ganancia o magnitud.\\
+
+\begin{figure}[h!]
+\caption{Diagrama de Bode de $G_1$ con $w_s$ y los márgenes de cruce de ganancia y fase.\label{fig:bode1}}
+  \centering
+\includegraphics[scale=0.25]{Bode/BodeG1.png}
+\end{figure}
+
+\begin{figure}[h!]
+\caption{Diagrama de Bode de $G_2$ con $w_s$ y los márgenes de cruce de ganancia y fase.\label{fig:bode2}}
+  \centering
+\includegraphics[scale=0.25]{Bode/BodeG2.png}
+\end{figure}
+
+\begin{table}[!h]
+\centering
+\caption{Características respuesta frecuencial}
+\label{tab:freq}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+                  & $G_1$ & $G_2$ & Unidades         \\ \midrule
+$M_g$ & $\infty$ & 3.4598 & \\
+$M_f$ & 6.7961 & -0.9457 & grados\\
+$w_b$ & 0.00141 & 79.3 & rad/seg\\
+$w_{cg}$ & $\infty$ & 4.9409 & rad/seg\\
+$w_{cf}$ & 1.1834 & 5.1606 & rad/seg\\
+                 \bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Tiempo de muestreo para la discretización del sistema}
+En la sección \ref{sec:tf} se analiza la estabilidad y la respuesta temporal para la planta en lazo abierto ($G$) discretizada en tres tiempos de muestreo. Dichos tiempos son definidos arbitrariamente, es decir, no se puede garantizar que ellos sean los óptimos o se encuentre en el rango de tiempos de muestreo ideales. Contrario a esto, a continuación se realizará nuevamente la discretización del sistema con base a uno de los tiempos de muestreo utilizados en la práctica y se contrastarán con los resultados anteriormente obtenidos en la sección \ref{sec:tf} y con los de tiempo continuo.\\
+
+En la práctica uno de los tiempos de muestreo $T$ utilizados se limita por el rango $$\frac{\pi}{15w_b}<T<\frac{\pi}{2.5w_b}$$
+Al calcular dichos rangos obtenemos que $T$ para $G_1$ varía entre 148.5387 y 891.2320 y para $G_2$ entre 0.0026 y 0.0158. Como entre menor sea $T$, más parecido es el sistema discreto al continuo y es mayor la probabilidad de conservar el comportamiento y estabilidad del sistema; sin embargo, esto también significa mayor tiempo de computo. Ahora, teniendo en cuenta lo anteriormente mencionado, se elige un valor para $T$ al interior del rango encontrado con el ancho de banda de $G_2$. Luego, $$T=0.0158-\epsilon, \quad \epsilon>0$$
+Y para $\epsilon=0.0001$ se tiene $T=0.0157$.\\
+
+Con dicho $T$ se discretiza la planta y a la función de transferencia correspondiente se le designará como $Gd^*$, la cual se muestra en (\ref{tf:Gdd}). Al comparar $Gd^*$ con $Gd$ se puede ver que se conserva el grado del numerador y denominador de cada función de transferencia o que se conserva su orden. No obstante, el coeficiente de $z$ tiende a 0 para la función de transferencia del par $u-y_1$ de $G_d$ y para el par $u-y_2$ de $G_d^*$. Antes de analizar los resultados de la respuesta temporal de $Gd^*$ es importante resaltar que como el tiempo de discretización de $Gd^*$ es menor al de $Gd$ se espera que los resultados de la primera sean más precisos frente a los del tiempo continuo.   
+
+\begin{equation}
+\label{tf:Gdd}
+\begin{aligned}
+&Gd^*(z) = \begin{bmatrix}
+	y_1(z)\\
+	y_2(z)
+\end{bmatrix} \\
+& = 
+\begin{bmatrix}
+\dfrac{0.000225 z^3 - 0.00022 z^2 - 0.000223 z  + 0.00022}{z^4 - 3.989 z^3 + 5.976 z^2 - 3.984 z + 0.9971}\\
+\dfrac{ -0.0005626 z^2 + 5.365e-07 z + 0.0005621}{z^3 - 2.989 z^2 + 2.987 z - 0.9971}
+\end{bmatrix}
+\begin{bmatrix}
+	u(z)
+\end{bmatrix}
+\end{aligned}
+\end{equation}
+\textbf{}
+
+Los polos, ceros y ganancia de la función de transferencia (\ref{tf:Gdd}) se resumen en el Cuadro \ref{tab: pzg tfdd}. Lo primero que se debe notar es que se conserva la estabilidad del sistema que como se ha mencionado es críticamente estable. Además se puede ver que la naturaleza de los polos y ceros de $Gd$ y $Gd^*$ no cambia. Por otro lado, la respuesta al escalón unitario que se observa en la Figura \ref{fig:stepGdd} es básicamente igual a la del caso continuo.\\
+
+\begin{table}[!h]
+\centering
+\caption{Polos, ceros y ganancia de la función de transferencia discreta}
+\label{tab: pzg tfdd}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+                  & Polos & Ceros             & Ganancia          \\ \midrule
+\multirow{4}{*}{$Gd*_1$} & 0.9958 + 0.0878i &  0.9970 + 0.0779i & 0.0002252 \\
+                  & 0.9958 - 0.0878i & 0.9970 - 0.0779i &                   \\
+                  & 1 & -0.9990  &                   \\
+                  & 0.9978 & &                   \\    
+                 \midrule
+\multirow{4}{*}{$Gd_2$} &  0.9978 & 1 & -0.0005626 \\
+                  & 0.9958 + 0.0878i & -0.9990 &                   \\  
+                  &  0.9958 - 0.0878i &  &
+                  \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[!h]
+\caption{Respuesta temporal de las salidas a la entrada escalón unitario\label{fig:stepGdd}}
+  \centering
+\includegraphics[scale=0.18]{Bode/stepGdd.png}
+\end{figure}
+
+\input{filter}
+
+\section{Control PID}
+Para los controles diseñados, que se presentan a continuación, se tienen los requerimientos de máximo sobre-impulso menor al 5\% ($M_p<5\%$) y tiempo de establecimiento menor a $0.75$ s ($t_s<0.75$ s). Además, como requerimientos adicionales no necesarios se tienen que $M_g>0.6$ dB y $30^{\circ}<M_f<60^{\circ}$. El controlador PID implementado tiene la siguiente forma en el espacio de Laplace
+$$P+I\frac{1}{s}+D\frac{N}{1+N\frac{1}{s}}$$
+donde $P$ hace referencia al coeficiente de la componente proporcional, $I$ a la del integrador, $D$ al del derivativo y $N$ al coeficiente de filtro.
+
+\subsection*{Control PID para la planta continua}
+La determinación de los valores $P,I,D,N$ se hace graduando manualmente el comportamiento de la respuesta transitoria (escala agresiva-robusta) y el tiempo de respuesta (escala lento-rápido) por medio del tunning de Simulink-MATLAB para un control PID. Se diseñan dos controles PID, uno por función de transferencia. En el Cuadro \ref{tab:PID} se presentan los valores hallados.\\ 
+
+\begin{table}[!h]
+\centering
+\caption{PID coeficientes por función de transferencia}
+\label{tab:PID}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+                  & $G_1$ & $G_2$          \\ \midrule
+P & 200.552446201989 & -239.038292087424 \\
+I & 137.939652394079 & -237.590071001188           \\
+D & 64.7869852416831 & -28.9472671510732                  \\
+N & 13473.5145446634 & 15094.0621992027 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+Para $G_1$ bajo el control PID planteado se obtiene $t_s=0.0272$ s, $M_p=1.95\%$, $M_g=-44.4$ dB y $M_f=55.5^{\circ}$, cumpliéndose con los requerimientos mínimos y además del de margen de fase. Es importante añadir que el sistema que está representado sólo por la función de transferencia $G_1$ es estable aplicando éste control. Para $G_2$ se obtiene $t_s=0.646$ s, $M_p=4.17\%$, $M_g=\infty$ dB y $M_f=86^{\circ}$, cumpliéndose también los requerimientos mínimos y el del margen de ganancia. En la Figura \ref{fig:PIDs} se puede comprobar lo anteriormente dicho: el máximo sobre-impulso no pasa de $1.05$ que corresponde al $5\%$ de la señal de entrada y tiende a estabilizarse alrededor de $0.6$ s. La respuesta $y_1$ permanece en oscilamiento, lo que se puede deber a que la estabilización normalmente de esta variable requiere mucho tiempo y se está llevando a cabo en un tiempo, en comparación, muy pequeño.\\    
+
+\begin{figure}[!h]
+\caption{Respuesta temporal de las salidas con control PID\label{fig:PIDs}}
+  \centering
+\includegraphics[scale=0.18]{Bode/PID.png}
+\end{figure}
+
+Finalmente, en la Figura \ref{fig:senal} se observa la señal controlada que le entra a cada planta. Podemos ver cómo inicialmente esta es del orden de $10^5$ y se lleva a 0 rápidamente, lo cual implica un gran esfuerzo de control.
+
+\begin{figure}[!h]
+\caption{Señal controlada\label{fig:senal}}
+  \centering
+\includegraphics[scale=0.18]{Bode/se_al_controlada.png}
+\end{figure}
+
+\input{controlS}
+
 
 \section{Conclusiones}
 El péndulo invertido es un modelo no lineal que posee múltiples puntos de equilibrio, entre ellos $X_0=0$ y $U_0=0$. Diferentes análisis de estabilidad muestran que el sistema en dicho punto es críticamente estable. Entre estos análisis se encuentran la definición de estabilidad con base en los valores propios de la matriz A del modelo linealizado en el punto de equilibrio mencionado, la ubicación de los polos de la función de transferencia y el método de Routh-Hurwitz. La salida que hace al modelo críticamente estable es $y_1$. Lo anterior se observa en las diferentes respuestas temporales de dicha salida: para señales de entrada no oscilantes y con pendiente monótonamente creciente o decreciente, como el escalón unitario y la función sierra, la respuesta temporal no converge; mientras que, para señales de comportamiento sinusoidal o no constantes, como el impulso unitario, tiende a converger a un valor.\\
