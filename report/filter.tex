@@ -1,15 +1,14 @@
 \section{Sistema perturbado y filtros}
 Con el fin de tener un modelo que emule de una mejor manera el mundo real,
-se decidío introducir diferentes perturbaciones al sistema, tanto en la
-entrada, esto con el fin de reproducir el error introducido por los sensores
+se introducen diferentes perturbaciones al sistema, tanto en la
+entrada, con el fin de reproducir el error introducido por los sensores
 y eventualidades que pueden afectar el sistema, como en la salida, nuevamente
 para simular los erroes de medida.
 
 Las perturbaciones introducidas a la entrada, poseen una naturaleza aleatoria,
-en particular se optó por utilizar un ruido blanco con periodo de
-muestreo $0.1$ y potencia $0.01$, pues los sensores reales poseen errores
-asociados a los cambios de voltaje, los cuales pueden ser modelas mediante un
-ruido blanco.
+en particular se opta por utilizar un ruido blanco con periodo de
+muestreo $0.1$ s y potencia $0.01$ watts, pues los sensores reales poseen errores
+asociados a los cambios de voltaje pudiendo ser modelos mediante dicho ruido.
 La entrada perturbada se puede ver en la figura~\ref{fig:entrada-ruido}
 
 \begin{figure}[t]
@@ -18,7 +17,7 @@ La entrada perturbada se puede ver en la figura~\ref{fig:entrada-ruido}
   \caption{Señal de entrada perturbada.} 
 \end{figure}
 
-Adicionalmente, tambien fue introducido al sistema perturbaciones deterministas
+Adicionalmente, también se introducen al sistema perturbaciones deterministas
 de alta frecuencia esto con el fin de simular el posible deterioro de ciertas
 componentes, pues si bien estos fenomenos son aleatorios, su impacto en el sistema
 puede ser tratado localmente de manera determinista. En particular se optó por
