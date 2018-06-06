@@ -2,13 +2,11 @@
 Con el fin de tener un modelo que emule de una mejor manera el mundo real,
 se introducen diferentes perturbaciones al sistema, tanto en la
 entrada, con el fin de reproducir el error introducido por los sensores
-y eventualidades que pueden afectar el sistema, como en la salida, nuevamente
-para simular los erroes de medida.
+y eventualidades que pueden afectar el sistema, como en la salida, para simular nuevamente los erroes de medida.
 
-Las perturbaciones introducidas a la entrada, poseen una naturaleza aleatoria,
-en particular se opta por utilizar un ruido blanco con periodo de
+Las perturbaciones introducidas a la entrada poseen una naturaleza aleatoria. Se opta por utilizar un ruido blanco con periodo de
 muestreo $0.1$ s y potencia $0.01$ watts, pues los sensores reales poseen errores
-asociados a los cambios de voltaje pudiendo ser modelos mediante dicho ruido.
+asociados a los cambios de voltaje pudiendo ser modelados mediante dicho ruido.
 La entrada perturbada se puede ver en la figura~\ref{fig:entrada-ruido}
 
 \begin{figure}[t]
@@ -17,27 +15,26 @@ La entrada perturbada se puede ver en la figura~\ref{fig:entrada-ruido}
   \caption{Señal de entrada perturbada.} 
 \end{figure}
 
-Adicionalmente, también se introducen al sistema perturbaciones deterministas
-de alta frecuencia esto con el fin de simular el posible deterioro de ciertas
-componentes, pues si bien estos fenomenos son aleatorios, su impacto en el sistema
-puede ser tratado localmente de manera determinista. En particular se optó por
-considerar una señal computesta por la suma de señales senoidales de alta frecuencia.
+Adicionalmente, se introducen al sistema perturbaciones deterministas
+de alta frecuencia con el fin de representar el posible deterioro de ciertas
+componentes, pues si bien estos fenómenos son aleatorios, su impacto en el sistema
+puede ser tratado localmente de manera determinista. Para ello se emplea por una señal computesta por la suma de señales senoidales de alta frecuencia.
 
-Con el fin poseer un sistema mas robusto, se diseñó un filtro basabajas de primer orden,
+Debido a la existencia de los ruidos y en busca de poseer un sistema más robusto, se diseña un filtro pasabajas de primer orden,
 el cual, como su nombre lo indica, se caracteriza por permitir el paso de las frecuencias
-más bajas y atenuar las frecuencias mas altas.
+más bajas y atenuar las más altas.
 
-La literatura señala que la funcion de transferencia de dicho tipo de filtros
-son de la forma:
+La literatura señala que la función de transferencia de dicho tipo de filtros
+es de la forma
 \[
 \frac{1}{\tau s + 1}
 \]
-Donde $\tau $ es un parametro temporal que depende de la frecuencia que se desea
-filtrar, en particular para nuestro problema se decidió escoger $\frac{1}{15}$.
+donde $\tau $ es un parámetro temporal que depende de la frecuencia que se desea
+filtrar, en particular para el problema planteado se decide escoger $\frac{1}{15}$.
 
-Tanto en~\ref{fig:filtro-angle}, como en~\ref{fig:filtro-c} se pude observar la
-respuesta temporal del sistema excitado con la entrada observada
-en~\ref{fig:entrada-ruido}, perturbado y filtrado.
+Tanto en la Figura ~\ref{fig:filtro-angle} como en la Figura ~\ref{fig:filtro-c} se pude observar la
+respuesta temporal del sistema excitado, con la entrada observada
+en Figura ~\ref{fig:entrada-ruido}, perturbado y filtrado.
 
 \begin{figure}[t]
   \label{fig:filtro-angle}
