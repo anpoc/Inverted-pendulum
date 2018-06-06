@@ -23,9 +23,9 @@ alpha = 3;
 EPS = 1e-15;
 Foo = []; Xoo = [];
 Fnc = inf;
-rC = 1; rA = 1;
+rC = 0; rA = 1;
 W = 300;
-maxIter = 100;
+maxIter = 20;
 %% Grasp
 for it=1:maxIter
     % construcion
@@ -39,8 +39,8 @@ for it=1:maxIter
         eA = simout(end-W:end, 1);
         eC = simout(end-W:end, 2);
         
-        Fnc = abs(max(abs(rC - eC)) + max(abs(rC - eC)));
-        if(abs(Fnc - 2) < EPS)
+        Fnc = abs(max(abs(rC - eC)) + max(abs(rA - eA)));
+        if(abs(Fnc - 1) < EPS)
             continue
         end
         if Fnc < F
@@ -67,4 +67,4 @@ for it=1:maxIter
     end
 end
 %%
-
+xnc = [-0.5156   -3.5156   -1.0000    3.5156         0    1.5156];
