@@ -3,8 +3,9 @@ El modelo que se ha venido trabajando posee la particularidad de tener una únic
 y múltiples salidas, es decir, es un modelo de tipo SIMO. Esto complica un poco la
 controlabilidad del sistema dado que los controladores PID estándar sólo funcionan para sistemas con la misma cantidad de entradas y salidas.
 A continuación se presenta un controlador diseñado con el fin de resolver este
-problema, es decir, que funcione para ambas funciones de transferencia.
-\subsubsection{Funcionamiento del control}
+problema, es decir, que funcione para ambas funciones de transferencia.\\
+
+\subsubsection*{Funcionamiento del control}
 El controlador es fundamentalmente una suma de controladores PID diferentes,
 cada uno de estos recibiendo como señal de entrada la salida de la respectiva
 variable que se desea controlar, para después alimentar el sistema con la suma de estos.
@@ -17,7 +18,7 @@ Formalmente el control puede ser definido de la siguiente manera
 donde $u(t)$ es la acción del controlador, $K_{pc}, K_{ic}, K_{dc}$, son las respectivas
 contantes del controlador para el carrito y de manera simiar $K_{pa}, K_{ia}, K_{da}$,
 son las constantes del controlador asociadas a la dinámica del ángulo; Y $e_c, e_a$ son los errores asociados a la posición del carrito y al ángulo en dicho orden.
-El diagrama de bloques implementado puede verse en la~\ref{fig:controlS}
+El diagrama de bloques implementado puede verse en la Figura ~\ref{fig:controlS}.\\
 
 \begin{figure}[t]
   \label{fig:controlS}
@@ -25,18 +26,17 @@ El diagrama de bloques implementado puede verse en la~\ref{fig:controlS}
   \caption{Diagrama de bloques de la implementacion del control PID acoplado} 
 \end{figure}
 
-\subsubsection{Estimación de parámetros}
+\subsubsection*{Estimación de parámetros}
 Al momento de diseñar el controlador la parte más compleja es, precisamente, encontrar los
 valores óptimos para las constantes $K_i$. Esto se debe principalmente al acoplamiento que
 presentan ambos sistemas, pues aunque los controladores se encuentren independientes, ambos
 realimentan el mismo sistema, haciendo que los cambios de una variable de estado
 inminentemente afecten a la otra. Además, sumado al desconocimiento del efecto que posee cada
-párametro sobre el sistema, se hace poco factible una sintonización manual o en métodos estándares. Por lo tanto se opta por plantear la estimación de parámetros
-como un problema de optimización no lineal, que busca disminuir el error del estado
-estacionario.
-Para resolver este problema de optimización se utiliza el método metaheurístico GRASP, el cual es ampliamente aplicado para resolver problemas de optimización combinatoria.
-\subsubsection{GRASP}
-El método GRASP fue introducido inicialmente por~\cite{Feo1989}, con el fin de solucionar
+párametro sobre el sistema, se hace poco factible una sintonización manual o en métodos estándares. Por lo tanto se opta por plantear la estimación de parámetros como un problema de optimización no lineal, que busca disminuir el error del estado
+estacionario. Para resolver este problema de optimización se utiliza el método metaheurístico GRASP, el cual es ampliamente aplicado para resolver problemas de optimización combinatoria.\\
+
+\subsubsection*{GRASP}
+El método GRASP fue introducido inicialmente por~\citet{Feo1989}, con el fin de solucionar
 heurísticamente el problema del conjunto cobertura, un importante problema NP-completo.
 Sin embargo, con el tiempo fue adaptado para resolver diferentes problemas.
 El algoritmo parte de una solución inicial (en este caso un conjunto de constantes $K_i$
@@ -52,7 +52,7 @@ en óptimo local.\\
 La mejor solución encontrada por el método fue
 \[K = [-0.5156,\   -3.5156,\   -1.0000,\    3.5156,\         0,\    1.5156]\]
 
-y la respuesta al impulso puede verse en la figura~\ref{fig:controlS}
+y la respuesta al impulso puede verse en la Figura~\ref{fig:controlS}.\\
 \begin{figure}[t]
   \label{fig:controlS}
   \includegraphics[scale=0.15]{Figuras/controlS}
