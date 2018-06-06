@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.14)  6 JUN 2018 00:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.14)  6 JUN 2018 00:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3544,34 +3544,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 868--869
 
  []
 
+<Bode/BodeG1.png, id=520, 1053.9375pt x 790.45313pt>
+File: Bode/BodeG1.png Graphic file (type png)
+<use Bode/BodeG1.png>
+Package pdftex.def Info: Bode/BodeG1.png  used on input line 873.
+(pdftex.def)             Requested size: 263.48373pt x 197.6128pt.
 
-LaTeX Warning: File `Bode/BodeG1.png' not found on input line 873.
+Overfull \hbox (11.48373pt too wide) in paragraph at lines 873--874
+ [][] 
+ []
+
+<Bode/BodeG2.png, id=521, 1053.9375pt x 790.45313pt>
+File: Bode/BodeG2.png Graphic file (type png)
+<use Bode/BodeG2.png>
+Package pdftex.def Info: Bode/BodeG2.png  used on input line 879.
+(pdftex.def)             Requested size: 263.48373pt x 197.6128pt.
+
+Overfull \hbox (11.48373pt too wide) in paragraph at lines 879--880
+ [][] 
+ []
 
 
-! Package pdftex.def Error: File `Bode/BodeG1.png' not found: using draft setti
-ng.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.873 ...ludegraphics[scale=0.25]{Bode/BodeG1.png}
-                                                  
-? 
-
-LaTeX Warning: File `Bode/BodeG2.png' not found on input line 879.
-
-
-! Package pdftex.def Error: File `Bode/BodeG2.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.879 ...ludegraphics[scale=0.25]{Bode/BodeG2.png}
-                                                  
-? 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 899.
@@ -3608,28 +3603,40 @@ Overfull \hbox (7.68039pt too wide) detected at line 923
 [][][]
  []
 
-
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 923.
+[15 <./Bode/BodeG1.png (PNG copy)> <./Bode/BodeG2.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 926--927
 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: File `Bode/stepGdd.png' not found on input line 950.
-
-
-! Package pdftex.def Error: File `Bode/stepGdd.png' not found: using draft sett
-ing.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.950 ...udegraphics[scale=0.18]{Bode/stepGdd.png}
-                                                  
-? 
+<Bode/stepGdd.png, id=536, 1053.9375pt x 790.45313pt>
+File: Bode/stepGdd.png Graphic file (type png)
+<use Bode/stepGdd.png>
+Package pdftex.def Info: Bode/stepGdd.png  used on input line 950.
+(pdftex.def)             Requested size: 189.70056pt x 142.27542pt.
 (./filter.tex
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1.
@@ -3643,31 +3650,6 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 8.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 8.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 8.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 8.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 8.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 8.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 8.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 8.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 8.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 8.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 8.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 8.
- [15]
 Package epstopdf Info: Source file: <Figuras/entrada.eps>
 (epstopdf)                    date: 2018-06-05 22:56:47
 (epstopdf)                    size: 103712 bytes
@@ -3678,7 +3660,7 @@ Package epstopdf Info: Source file: <Figuras/entrada.eps>
 ted-to.pdf Figuras/entrada.eps>
 (epstopdf)             \includegraphics on input line 17.
 Package epstopdf Info: Output file is already uptodate.
-<Figuras/entrada-eps-converted-to.pdf, id=537, 1433.355pt x 707.64375pt>
+<Figuras/entrada-eps-converted-to.pdf, id=538, 1433.355pt x 707.64375pt>
 File: Figuras/entrada-eps-converted-to.pdf Graphic file (type pdf)
 <use Figuras/entrada-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/entrada-eps-converted-to.pdf  used on input li
@@ -3703,7 +3685,7 @@ Package epstopdf Info: Source file: <Figuras/filtro-angle.eps>
 onverted-to.pdf Figuras/filtro-angle.eps>
 (epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
-<Figuras/filtro-angle-eps-converted-to.pdf, id=541, 1433.355pt x 707.64375pt>
+<Figuras/filtro-angle-eps-converted-to.pdf, id=542, 1433.355pt x 707.64375pt>
 File: Figuras/filtro-angle-eps-converted-to.pdf Graphic file (type pdf)
 <use Figuras/filtro-angle-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/filtro-angle-eps-converted-to.pdf  used on inp
@@ -3727,7 +3709,7 @@ Package epstopdf Info: Source file: <Figuras/filtro-c.eps>
 rted-to.pdf Figuras/filtro-c.eps>
 (epstopdf)             \includegraphics on input line 51.
 Package epstopdf Info: Output file is already uptodate.
-<Figuras/filtro-c-eps-converted-to.pdf, id=542, 1445.4pt x 725.71124pt>
+<Figuras/filtro-c-eps-converted-to.pdf, id=543, 1445.4pt x 725.71124pt>
 File: Figuras/filtro-c-eps-converted-to.pdf Graphic file (type pdf)
 <use Figuras/filtro-c-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/filtro-c-eps-converted-to.pdf  used on input l
@@ -3776,20 +3758,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 977--978
 
  []
 
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 978.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 978.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 978.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 978.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 978.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 978.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 978.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 978.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 978.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 978.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 978.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 978.
+[16 <./Bode/stepGdd.png (PNG copy)>]
+<Bode/PID.png, id=556, 1053.9375pt x 790.45313pt>
+File: Bode/PID.png Graphic file (type png)
+<use Bode/PID.png>
+Package pdftex.def Info: Bode/PID.png  used on input line 982.
+(pdftex.def)             Requested size: 189.70056pt x 142.27542pt.
 
-LaTeX Warning: File `Bode/PID.png' not found on input line 982.
-
-
-! Package pdftex.def Error: File `Bode/PID.png' not found: using draft setting.
-
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.982 \includegraphics[scale=0.18]{Bode/PID.png}
-                                                
-? 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -3835,32 +3834,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 11.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 11.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 18.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 18.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 18.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 18.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 18.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 18.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 18.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 18.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 18.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 18.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 18.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 18.
- [16]
-<Figuras/control-modelo.jpg, id=557, 1290.32062pt x 539.01375pt>
+<Figuras/control-modelo.jpg, id=559, 1290.32062pt x 539.01375pt>
 File: Figuras/control-modelo.jpg Graphic file (type jpg)
 <use Figuras/control-modelo.jpg>
 Package pdftex.def Info: Figuras/control-modelo.jpg  used on input line 28.
@@ -3914,7 +3888,7 @@ Package epstopdf Info: Source file: <Figuras/controlS.eps>
 rted-to.pdf Figuras/controlS.eps>
 (epstopdf)             \includegraphics on input line 63.
 Package epstopdf Info: Output file is already uptodate.
-<Figuras/controlS-eps-converted-to.pdf, id=558, 1445.4pt x 690.58pt>
+<Figuras/controlS-eps-converted-to.pdf, id=560, 1445.4pt x 690.58pt>
 File: Figuras/controlS-eps-converted-to.pdf Graphic file (type pdf)
 <use Figuras/controlS-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/controlS-eps-converted-to.pdf  used on input l
@@ -3946,7 +3920,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 997--998
 
  []
 
-
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 998.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 998.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 998.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 998.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 998.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 998.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 998.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 998.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 998.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 998.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 998.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 998.
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 999--1000
 
  []
@@ -3964,31 +3962,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 2.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 2.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 62.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 62.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 62.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 62.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 62.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 62.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 62.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 62.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 62.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 62.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 62.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 62.
- [17]) (./RH.tex
+) (./RH.tex
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand >>
@@ -4256,7 +4230,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1010.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1010.
- [22 <./Figuras/filtro-c-eps-converted-to.pdf> <./Figuras/control-modelo.jpg>]
+ [22 <./Figuras/filtro-c-eps-converted-to.pdf> <./Bode/PID.png (PNG copy)>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1010.
 Package babel Info: Redefining spanish shorthand >>
@@ -4281,9 +4255,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1010.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1010.
- [23
-
- <./Figuras/controlS-eps-converted-to.pdf>]
+ [23 <./Figuras/control-modelo.jpg> <./Figuras/controlS-eps-converted-to.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1010.
  (./main.aux
 LaTeX Info: Redefining \. on input line 36.
@@ -4304,13 +4276,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1010.
  ) 
 Here is how much of TeX's memory you used:
- 19681 strings out of 492982
- 335236 string characters out of 6134896
- 422527 words of memory out of 5000000
- 22797 multiletter control sequences out of 15000+600000
+ 19697 strings out of 492982
+ 335560 string characters out of 6134896
+ 423527 words of memory out of 5000000
+ 22813 multiletter control sequences out of 15000+600000
  579199 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,19n,45p,10398b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,19n,45p,10398b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
@@ -4332,10 +4304,10 @@ rier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (23 pages, 4901216 bytes).
+Output written on main.pdf (23 pages, 5166696 bytes).
 PDF statistics:
- 762 PDF objects out of 1000 (max. 8388607)
+ 766 PDF objects out of 1000 (max. 8388607)
  619 compressed objects within 7 object streams
  180 named destinations out of 1000 (max. 500000)
- 604 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 624 words of extra memory for PDF output out of 10000 (max. 10000000)
 
