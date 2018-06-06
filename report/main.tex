@@ -11,7 +11,7 @@
 \usepackage{booktabs}
 \usepackage{bm}
 \usepackage{physics}
-%\usepackage{natbib}
+\usepackage{natbib}
 \usepackage{color}
 \usepackage{hyperref}
 \usepackage{multirow}
@@ -551,20 +551,17 @@ El péndulo invertido es un sistema SIMO, es decir, posee una sola entrada y mú
 \begin{equation}
 \label{tf: G}
  G(s) = \begin{bmatrix}
-	y_1(s)\\
-	y_2(s)
+	\frac{y_1(s)}{u(s)}\\
+	\frac{y_2(s)}{u(s)}
 \end{bmatrix} = 
 \begin{bmatrix}
     \dfrac{1.818 s^2 + 44.55}{s^4 + 0.1818 s^3 + 31.18 s^2 + 4.455 s}\\
 	\dfrac{-4.545 s}{s^3 + 0.1818 s^2 + 31.18 s + 4.455}
 \end{bmatrix}
-\begin{bmatrix}
-	u(s)
-\end{bmatrix}
 \end{equation}
 \textbf{}
 
-Para cualquier función de transferencia se denomina polos a las raíces del denominador, también conocido como polinomio característico, y ceros a las del numerador. La ganancia es la constante o la``amplitud" de la función, la cual no necesariamente debe ser positiva. Una función de transferencia ($TF$) con numerador de grado $m$ y denominador de grado $n$, se puede expresar en términos de sus polos ($p$), ceros ($z$) y ganancia ($k$) de la siguiente forma
+Para cualquier función de transferencia se denomina polos a las raíces del denominador, también conocido como polinomio característico, y ceros a las del numerador. La ganancia es el aporte en magnitud de la función, la cual no necesariamente debe ser positiva. Una función de transferencia ($TF$) con numerador de grado $m$ y denominador de grado $n$, se puede expresar en términos de sus polos ($p$), ceros ($z$) y ganancia ($k$) de la siguiente forma
 \[
 TF(s) = k\dfrac{(s - z_1)...(s - z_m)}{(s - p_1)...(s - p_n)}
 \]
@@ -622,15 +619,12 @@ La función de transferencia del modelo, presentada en la Subsección \ref{sub:f
 \begin{equation}
 \label{tf:Gr}
 Gr(s)=\begin{bmatrix}
-	y_1(s)\\
-	y_2(s)
+  \frac{y_1(s)}{u(s)}\\
+  \frac{y_2(s)}{u(s)}
 \end{bmatrix} = 
 \begin{bmatrix}
 \dfrac{0.00468 s + 1.428}{s^2 + 0.1428 s}\\
 \dfrac{-0.0249}{s + 0.1428}
-\end{bmatrix}
-\begin{bmatrix}
-	u(s)
 \end{bmatrix}
 \end{equation}
 
@@ -675,37 +669,37 @@ Las respuestas al escalón y al impulso unitarios del sistema reducido se ven en
 \subsection{Función de transferencia discreta}
 La función de transferencia continua fue discretizada en tres tiempos de muestreo: $0.21$, $0.73$ y $1.26$. Se presentan los mapas de polos y ceros para las tres discretizaciones obtenidas, junto con las respuestas temporales a las entradas escalón unitario e impulso unitario, en las Figuras \ref{fig:pzGd}-\ref{fig:impulseGd2}. Los mapas de polos y ceros para la función discretizada en los diferentes tiempos de muestreo tienen en común un polo en la frontera del círculo unitario, específicamente en ($1,0$). A medida que se aumenta el tiempo de muestreo, los polos aumentan su distancia al círculo unitario. El sistema en ninguna de las discretizaciones pierde su carácter de críticamente inestable. De forma similar ocurre con las respuestas temporales al impulso unitario, en las cuales se halla un gran parecido con las respuestas temporales a la misma entrada de la función de transferencia continua. A medida que se aumenta el tiempo de muestreo, se percibe un deterioro en curvas, especialmente en la de la salida $y_1$ antes de converger con la aparición de un despicado y en la de la salida $y_2$ donde las distancia entre las oscilaciones es cada vez mayor y éstas son más toscas.\\ 
 
-\begin{figure}[h!]
+\begin{figure}[t]
 \caption{Mapa de polos y ceros para la función de transferencia con $T=0.21$\label{fig:pzGd}}
   \centering
 \includegraphics[scale=0.18]{tf/pzmap_Gd.jpg}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[t]
 \caption{Mapa de polos y ceros para la función de transferencia con $T=0.73$\label{fig:pzGd1}}
   \centering
 \includegraphics[scale=0.18]{tf/pzmap_Gd_1.jpg}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[t]
 \caption{Mapa de polos y ceros para la función de transferencia con $T=1.26$\label{fig:pzGd2}}
   \centering
 \includegraphics[scale=0.18]{tf/pzmap_Gd_2.jpg}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[t]
 \caption{Respuesta temporal de las salidas a la entrada impulso unitario para la f. de transferencia de $T=0.21$\label{fig:impulseGd}}
   \centering
 \includegraphics[scale=0.18]{tf/impulse_Gd.jpg}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[t]
 \caption{Respuesta temporal de las salidas a la entrada impulso unitario para la f. de transferencia de $T=0.73$\label{fig:impulseGd1}}
   \centering
-%\includegraphics[scale=0.18]{tf/impulse_Gd_1.jpg}
+\includegraphics[scale=0.18]{tf/impulse_Gd_1.jpg}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[t]
 \caption{Respuesta temporal de las salidas a la entrada impulso unitario para la f. de transferencia de $T=1.26$\label{fig:impulseGd2}}
   \centering
 \includegraphics[scale=0.18]{tf/impulse_Gd_2.jpg}
@@ -717,16 +711,13 @@ La función de transferencia discreta que más se asemeja a la función de trans
 \label{tf:Gd}
 \begin{aligned}
 &Gd(z) = \begin{bmatrix}
-	y_1(z)\\
-	y_2(z)
+	\frac{y_1(s)}{u(s)}\\
+	\frac{y_2(s)}{u(s)}
 \end{bmatrix} \\
 & = 
 \begin{bmatrix}
 \dfrac{0.03866 z^3 - 0.001061 z^2 - 6.895e^{-5} z + 0.03817}{z^4 - 2.743 z^3 + 3.484 z^2 - 2.704 z + 0.9625}\\
 \dfrac{-0.08809 z^2 + 0.001042 z + 0.08705}{z^3 - 1.743 z^2 + 1.741 z - 0.9625}
-\end{bmatrix}
-\begin{bmatrix}
-	u(z)
 \end{bmatrix}
 \end{aligned}
 \end{equation}
@@ -770,7 +761,7 @@ El entorno de programación visual \textit{Simulink} posee la posibilidad de agr
 
 Con la  finalidad de facilitar el análisis se consideran dos subfiguras. La primera muestra la respuesta temporal para la salida $y_2$ de los diferentes métodos de discretizacion (ZOH y \textit{c2d}) bajo una entrada escalón; sin embargo, por la exactitud de la aproximación es muy difícil comparar las diferentes discretizaciones. Por otro lado, la segunda subfigura muestra un acercamiento a una sección especifica de la primera subfigura, lo que permite observar de manera más clara las diferencias en las señales.\\ 
 
-El primer resultado que se puede deducir al observar la Figura \ref{fig:dis5}, es el hecho de que efectivamente las señales discretas se encuentran sincronizadas, es decir, poseen un mismo periodo de muestreo; sin embargo, también es posible ver éstas difieren un poco. Lo que se puede deber, a que si bien ambas utilizan retenedores de orden cero, ambas están reteniendo señales diferentes, y si bien es un mismo modelo, el modelo de Simulink utiliza un método numérico específico para computar la señal, el cual introduce un error asociado a la exactitud del método, error que el sistema discreto implementado en \textit{Simulink} retiene. Por otro lado, al utilizar el comando \texttt{c2d}, se realiza sobre el modelo teórico, lo cual en principio posee menor error numérico asociado. Es importante anotar, que la diferencia entre ambas aproximaciones es bastante baja.
+El primer resultado que se puede deducir al observar la Figura \ref{fig:dis5}, es el hecho de que efectivamente las señales discretas se encuentran sincronizadas, es decir, poseen un mismo periodo de muestreo; sin embargo, también es posible ver éstas difieren un poco. Esto puede deberse, a que si bien ambas utilizan retenedores de orden cero, ambas están reteniendo señales diferentes, y si bien es un mismo modelo, el modelo de Simulink utiliza un método numérico específico para computar la señal, el cual introduce un error asociado a la exactitud del método, error que el sistema discreto implementado en \textit{Simulink} retiene. Por otro lado, al utilizar el comando \texttt{c2d}, se realiza sobre el modelo teórico, lo cual en principio posee menor error numérico asociado. Es importante anotar, que la diferencia entre ambas aproximaciones es bastante baja.
 
 
 \section{Control}
@@ -818,7 +809,7 @@ En la Figura \ref{fig:rlocusG2PID} se muestra el lugar de las raíces para $G_{2
 \end{figure}
 
 \subsection{Análisis control para $G_1$}
-Para el análisis de control de $G_1$ sólo se estudia la posibilidad de introducir un controlador estático. En próximas entregas se analizará la oportunidad de implementar un controlador PID. En la Figura \ref{fig:rlocusG1} se muestra el lugar de las raíces de $G_1$. Dada la posibilidad de mover el polo que se encuentra en (0,0) y que la estabilidad del sistema no se deteriora, sino que mejora, se decide aplicar un controlador estático con $k=0.00357$.\\   
+Para el análisis de control de $G_1$ sólo se estudia la posibilidad de introducir un controlador estático. Más adelante se analizará la inserción de implementar un controlador PID. En la Figura \ref{fig:rlocusG1} se muestra el lugar de las raíces de $G_1$. Dada la posibilidad de mover el polo que se encuentra en (0,0) y que la estabilidad del sistema no se deteriora, sino que mejora, se decide aplicar un controlador estático con $k=0.00357$.\\   
 
 \begin{figure}[h!]
 \caption{Lugar de las raíces para $G_1$.\label{fig:rlocusG1}}
@@ -863,7 +854,7 @@ Esta sección se encuentra anexada al final del documento. La razón por la que 
 
 \section{Bode}
 
-En esta sección se analiza la respuesta frecuencial del sistema. En las Figuras \ref{fig:bode1} y \ref{fig:bode2} se presenta el diagrama de Bode para la función de transferencia $G_1$ y $G_2$, definidas en la sección \ref{sub:ftc}, respectivamente. Las características más importantes del diagrama se resumen en el Cuadro \ref{tab:freq}. $M_g$ y $M_f$ hacen referencia al margen de cruce de la ganancia o magnitud y de la fase donde $M_g$ se define como $20*log_{10}(1/G)$ con $G$ la ganancia en el cruce de fase de -180. Por otro lado las $w$ hacen referencia a frecuencias: $w_b$ es el ancho de banda que se define como $G(0)-3$dB, es decir, como tres decibeles por debajo del valor de la magnitud en la frecuencia 0; $w_{cg}$ y $w_{cf}$ son las frecuencias de cruce de ganancia y de fase en el orden mencionado. En $w_{cg}$ se puede incrementar o reducir la ganancia por el valor indicado en $M_g$ antes de perder estabilidad. Dado que $M_g \not< 0$ para ninguna de las $G_i$ entonces la estabilidad no es más sensible a una reducción en la ganancia o magnitud.\\
+En esta sección se analiza la respuesta frecuencial del sistema. En las Figuras \ref{fig:bode1} y \ref{fig:bode2} se presenta el diagrama de Bode para la función de transferencia $G_1$ y $G_2$, definidas en la sección \ref{sub:ftc}, respectivamente. Las características más importantes del diagrama se resumen en el Cuadro \ref{tab:freq}. $M_g$ y $M_f$ hacen referencia al margen de cruce de la ganancia o magnitud y de la fase donde $M_g$ se define como $20*log_{10}(1/G)$ con $G$ la ganancia en el cruce de fase de -180. Por otro lado las $w$ hacen referencia a frecuencias: $w_b$ es el ancho de banda que se define como $G(0)-3$dB, es decir, como tres decibeles por debajo del valor de la magnitud en la frecuencia 0; $w_{cg}$ y $w_{cf}$ son las frecuencias de cruce de ganancia y de fase en el orden mencionado. En $w_{cg}$ se puede incrementar o reducir la ganancia por el valor indicado en $M_g$ antes de perder estabilidad. Dado que $M_g \not< 0$ para ninguna de las $G_i$, entonces la estabilidad no es más sensible a una reducción en la ganancia.\\
 
 \begin{figure}[h!]
 \caption{Diagrama de Bode de $G_1$ con $w_s$ y los márgenes de cruce de ganancia y fase.\label{fig:bode1}}
@@ -876,6 +867,8 @@ En esta sección se analiza la respuesta frecuencial del sistema. En las Figuras
   \centering
 \includegraphics[scale=0.25]{Bode/BodeG2.png}
 \end{figure}
+
+Es importante destacar que en $G_1$ para frecuencias cercanas a 10, la magnitud no presenta un comportamiento suave, implicando así, que hay una reducción muy drástica de la magnitud seguido de una amplificación grande de la misma. Este tipo de comportamientos no son deseables, por lo cual, tampoco sería deseable que al sistema le entrasen señales con las frecuencias que producen dichos cambios tan bruscos. En resumen, estos cambios pueden desestabilizar fácilmente al sistema si no es lo suficientemente robusto. Por otro lado, a pesar de que en $G_2$ también se presenta un pico bastante alto, el hay un cambio tan marcado de magnitud como ocurre $G_1$. Podría ser que dicho comportamiento, el de $G_1$, esté asociado a que es críticamente estable.
 
 \begin{table}[!h]
 \centering
@@ -906,16 +899,13 @@ Con dicho $T$ se discretiza la planta y a la función de transferencia correspon
 \label{tf:Gdd}
 \begin{aligned}
 &Gd^*(z) = \begin{bmatrix}
-	y_1(z)\\
-	y_2(z)
+	\frac{y_1(s)}{u(s)}\\
+	\frac{y_2(s)}{u(s)}
 \end{bmatrix} \\
 & = 
 \begin{bmatrix}
 \dfrac{0.000225 z^3 - 0.00022 z^2 - 0.000223 z  + 0.00022}{z^4 - 3.989 z^3 + 5.976 z^2 - 3.984 z + 0.9971}\\
 \dfrac{ -0.0005626 z^2 + 5.365e-07 z + 0.0005621}{z^3 - 2.989 z^2 + 2.987 z - 0.9971}
-\end{bmatrix}
-\begin{bmatrix}
-	u(z)
 \end{bmatrix}
 \end{aligned}
 \end{equation}
@@ -930,12 +920,12 @@ Los polos, ceros y ganancia de la función de transferencia (\ref{tf:Gdd}) se re
 \begin{tabular}{@{}lccc@{}}
 \toprule
                   & Polos & Ceros             & Ganancia          \\ \midrule
-\multirow{4}{*}{$Gd*_1$} & 0.9958 + 0.0878i &  0.9970 + 0.0779i & 0.0002252 \\
+\multirow{4}{*}{$Gd^*_1$} & 0.9958 + 0.0878i &  0.9970 + 0.0779i & 0.0002252 \\
                   & 0.9958 - 0.0878i & 0.9970 - 0.0779i &                   \\
                   & 1 & -0.9990  &                   \\
                   & 0.9978 & &                   \\    
                  \midrule
-\multirow{4}{*}{$Gd_2$} &  0.9978 & 1 & -0.0005626 \\
+\multirow{4}{*}{$Gd^*_2$} &  0.9978 & 1 & -0.0005626 \\
                   & 0.9958 + 0.0878i & -0.9990 &                   \\  
                   &  0.9958 - 0.0878i &  &
                   \\ \bottomrule
@@ -951,12 +941,14 @@ Los polos, ceros y ganancia de la función de transferencia (\ref{tf:Gdd}) se re
 \input{filter}
 
 \section{Control PID}
-Para los controles diseñados, que se presentan a continuación, se tienen los requerimientos de máximo sobre-impulso menor al 5\% ($M_p<5\%$) y tiempo de establecimiento menor a $0.75$ s ($t_s<0.75$ s). Además, como requerimientos adicionales no necesarios se tienen que $M_g>0.6$ dB y $30^{\circ}<M_f<60^{\circ}$. El controlador PID implementado tiene la siguiente forma en el espacio de Laplace
-$$P+I\frac{1}{s}+D\frac{N}{1+N\frac{1}{s}}$$
-donde $P$ hace referencia al coeficiente de la componente proporcional, $I$ a la del integrador, $D$ al del derivativo y $N$ al coeficiente de filtro.
+Para los controladores diseñados, que se presentan a continuación, se tienen los requerimientos de máximo sobre-impulso menor al 5\% ($M_p<5\%$) y tiempo de establecimiento menor a $0.75$ s ($t_s<0.75$ s). Además, como requerimientos adicionales no necesarios se tienen que $M_g>0.6$ dB y $30^{\circ}<M_f<60^{\circ}$. 
 
-\subsection*{Control PID para la planta continua}
-La determinación de los valores $P,I,D,N$ se hace graduando manualmente el comportamiento de la respuesta transitoria (escala agresiva-robusta) y el tiempo de respuesta (escala lento-rápido) por medio del tunning de Simulink-MATLAB para un control PID. Se diseñan dos controles PID, uno por función de transferencia. En el Cuadro \ref{tab:PID} se presentan los valores hallados.\\ 
+\subsection*{Control PID para la planta continua G}
+El controlador PID implementado tiene la siguiente forma en el espacio de Laplace
+$$P+I\frac{1}{s}+D\frac{N}{1+N\frac{1}{s}}$$
+donde $P$ hace referencia al coeficiente de la componente proporcional, $I$ a la del integrador, $D$ al del derivativo y $N$ al coeficiente de filtro.\\
+
+La determinación de los valores $P,I,D,N$ se hace graduando manualmente el comportamiento de la respuesta transitoria (escala agresiva-robusta) y el tiempo de respuesta (escala lento-rápido) por medio del tunning de Simulink-MATLAB para un controlador PID. Se diseñan dos controladores PID, uno por función de transferencia. En el Cuadro \ref{tab:PID} se presentan los valores hallados.\\ 
 
 \begin{table}[!h]
 \centering
@@ -972,7 +964,7 @@ N & 13473.5145446634 & 15094.0621992027 \\ \bottomrule
 \end{tabular}
 \end{table}
 
-Para $G_1$ bajo el control PID planteado se obtiene $t_s=0.0272$ s, $M_p=1.95\%$, $M_g=-44.4$ dB y $M_f=55.5^{\circ}$, cumpliéndose con los requerimientos mínimos y además del de margen de fase. Es importante añadir que el sistema que está representado sólo por la función de transferencia $G_1$ es estable aplicando éste control. Para $G_2$ se obtiene $t_s=0.646$ s, $M_p=4.17\%$, $M_g=\infty$ dB y $M_f=86^{\circ}$, cumpliéndose también los requerimientos mínimos y el del margen de ganancia. En la Figura \ref{fig:PIDs} se puede comprobar lo anteriormente dicho: el máximo sobre-impulso no pasa de $1.05$ que corresponde al $5\%$ de la señal de entrada y tiende a estabilizarse alrededor de $0.6$ s. La respuesta $y_1$ permanece en oscilamiento, lo que se puede deber a que la estabilización normalmente de esta variable requiere mucho tiempo y se está llevando a cabo en un tiempo, en comparación, muy pequeño.\\    
+Para $G_1$ bajo el controlador PID planteado se obtiene $t_s=0.0272$ s, $M_p=1.95\%$, $M_g=-44.4$ dB y $M_f=55.5^{\circ}$, cumpliéndose con los requerimientos mínimos y además del de margen de fase. Es importante añadir que el sistema que está representado sólo por la función de transferencia $G_1$ es estable aplicando este controlador. Para $G_2$ se obtiene $t_s=0.646$ s, $M_p=4.17\%$, $M_g=\infty$ dB y $M_f=86^{\circ}$, cumpliéndose también los requerimientos mínimos y el del margen de ganancia. En la Figura \ref{fig:PIDs} se puede comprobar lo anteriormente dicho: el máximo sobre-impulso no pasa de $1.05$ que corresponde al $5\%$ de la señal de entrada y tiende a estabilizarse alrededor de $0.6$ s. La respuesta $y_1$ permanece en oscilamiento, lo que se puede deber a que la estabilización normalmente de esta variable requiere mucho tiempo y se está llevando a cabo en un tiempo, en comparación, muy pequeño.\\    
 
 \begin{figure}[!h]
 \caption{Respuesta temporal de las salidas con control PID\label{fig:PIDs}}
@@ -980,7 +972,7 @@ Para $G_1$ bajo el control PID planteado se obtiene $t_s=0.0272$ s, $M_p=1.95\%$
 \includegraphics[scale=0.18]{Bode/PID.png}
 \end{figure}
 
-Finalmente, en la Figura \ref{fig:senal} se observa la señal controlada que le entra a cada planta. Podemos ver cómo inicialmente esta es del orden de $10^5$ y se lleva a 0 rápidamente, lo cual implica un gran esfuerzo de control.
+Finalmente, en la Figura \ref{fig:senal} se observa la señal controlada que le entra a cada planta. Se puede ver cómo inicialmente esta es del orden de $10^5$ y se lleva a 0 rápidamente, lo cual implica un gran esfuerzo de control.
 
 \begin{figure}[!h]
 \caption{Señal controlada\label{fig:senal}}
@@ -988,6 +980,47 @@ Finalmente, en la Figura \ref{fig:senal} se observa la señal controlada que le 
 \includegraphics[scale=0.18]{Bode/se_al_controlada.png}
 \end{figure}
 
+\subsection*{Control PID discreto para planta discreta $Gd^*$}
+
+El controlador PID discreto implementado tiene la siguiente forma en el espacio $\mathbb{Z}$
+$$P+IT\frac{1}{z-1}+D\frac{N}{1+NT\frac{1}{z-1}}$$
+donde $P$ hace referencia al coeficiente de la componente proporcional, $I$ a la del integrador, $D$ al del derivativo y $N$ al coeficiente de filtro.\\
+
+Al igual que para la planta continua, la determinación de los valores $P,I,D,N$ se hace graduando manualmente por medio del tunning de Simulink-MATLAB para un controlador PID. Se diseñan dos controladores PID discretos, uno por función de transferencia cuyos valores se encuentran en el Cuadro \ref{tab:PIDD}.\\ 
+
+\begin{table}[!h]
+\centering
+\caption{PID discreto coeficientes por función de transferencia}
+\label{tab:PIDD}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+                  & $G_1$ & $G_2$          \\ \midrule
+P & 14.5088950498591 & -16.6089078675179 \\
+I & 2.72909260484221 & -23.0140348638765           \\
+D & 17.0877186284455 & -2.9232259174881                  \\
+N & 122.785257210229 & 118.684401993543 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+A diferencia del cumplimiento de los requerimientos para la planta continua, los PID discretos mostrados no los cumplen a cabalidad. Para $G_1$, se tiene $t_s=7.35$ s, $M_p=5.73\%$, $M_g=12.2$ dB y $M_f=74.1^{\circ}$, cumpliéndose únicamente el requerimiento no necesario para $M_g$. A pesar de ello, se considera que la combinación obtenida no es mala. Primero, aunque el tiempo de establecimiento es alto, se debe tener en cuenta que la estabilización de $G_1$ es lenta, por lo cual $7.35$ s es un muy buen valor. Segundo, el $M_p$ está cerca del valor requerido. Para $G_2$ los valores son $M_p=4.31\%$, $M_g=19.5$ dB y $M_f=63^{\circ}$, para $t_s$ no se tiene valor. Se observa que se cumple el requerimiento para máximo sobre-impulso. En la Figura \ref{fig:PIDDs} se corrobora lo anteriormente dicho. Además se observa que $y_1$ queda con comportamiento oscilante, lo cual también ocurre para el caso continuo. Nótese que el valor en estado estacionario de $y_2$ es menor al de la entrada lo cual se puede reducir añadiendo un polo en el origen.\\    
+
+\begin{figure}[!h]
+\caption{Respuesta temporal de las salidas con control PID discreto\label{fig:PIDDs}}
+  \centering
+\includegraphics[scale=0.18]{Bode/PIDD.png}
+\end{figure}
+
+Si se mira la Figura \ref{fig:senald} que muestra la señal controlada, se observa una disminución en el orden inicial, en el cual para este caso sería de $10^3$, implicando menor esfuerzo de control en comparación con el PID continuo. Frente a la respuesta temporal al escalón unitario, se concluye que actúa de forma más eficaz el controlador continuo, mas lleva mayor esfuerzo de control. En la vida real, esto se interpreta en términos de costos, e.d. resulta más costoso aplicar un controlador continuo a uno discreto. Por otro lado, en términos de sintonización manual es más fácil hacerlo cuando se trabaja en tiempo continuo. 
+
+Finalmente, en la Figura \ref{fig:senal} se observa la señal controlada que le entra a cada planta. Se puede ver cómo inicialmente esta es del orden de $10^5$ y se lleva a 0 rápidamente, lo cual implica un gran esfuerzo de control.
+
+\begin{figure}[!h]
+\caption{Señal controlada\label{fig:senald}}
+  \centering
+\includegraphics[scale=0.18]{Bode/senalz.png}
+\end{figure}
+
+Por último, al comparar el controlador discreto con el controlador continuo para ambas 
 \input{controlS}
 
 
