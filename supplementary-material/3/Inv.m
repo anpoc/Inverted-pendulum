@@ -2,7 +2,7 @@
 clear
 close all
 clc
-%%
+%%dis
 [A,B,C,D] = linmod('InvertedPendulum');
 
 %% Filter
@@ -23,23 +23,24 @@ alpha = 3;
 EPS = 1e-15;
 Foo = []; Xoo = [];
 Fnc = inf;
+rC = 1; rA = 1;
+W = 300;
+maxIter = 100;
 %% Grasp
-while F > 0.01
+for it=1:maxIter
     % construcion
     Op = O(randi([1 720], N, 1), :);
     Fa = [];
     xa = [];
     for i=1:N
-        try
-            xnc = fac .* Op(i, :) + x;
-            sim('control');
-            Fnc = abs(simout(end-100:end, :) - 1);
-            Fnc = max(Fnc(:));
-        catch
-            continue
-        end
+        xnc = fac .* Op(i, :) + x;
+        sim('control');
         
-        if(abs(Fnc - 1) < EPS)
+        eA = simout(end-W:end, 1);
+        eC = simout(end-W:end, 2);
+        
+        Fnc = abs(max(abs(rC - eC)) + max(abs(rC - eC)));
+        if(abs(Fnc - 2) < EPS)
             continue
         end
         if Fnc < F

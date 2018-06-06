@@ -1,0 +1,26 @@
+% analice la estabilidad de la planta para dos
+%  parámetros diferentes. Posteriormente, aplique un control con un regulador estático (u = k
+%  x error) y determine los valores para los cuales el sistema es estable e inestable. Analice los
+%  resultados.
+
+\begin{eqnarray}
+  \label{eq:sistema}
+  \left\{
+  \begin{array}{ll}
+    f_1 = \displaystyle\dot{x_1} = \displaystyle x_2 \\
+    f_2 = \displaystyle\dot{x_2} =
+            \displaystyle\frac{(I + ml^2)a + m^2l^2g\sin(x_3)\cos(x_3)}
+              {(M + m)(I + ml^2)-m^2l^2\cos^2(x_3)}\\
+    f_3 = \displaystyle\dot{x_3} = \displaystyle x_4\\
+    f_4 = \dot{x_4} = \displaystyle\frac{-ml\cos(x_3)a - (M + m)mlg\sin(x_3)}
+                         {(M + m)(I + ml^2) - m^2l^2\cos^2(x_3)}\\
+  \end{array}
+  \right.
+\end{eqnarray}
+
+\subsection{Método de Routh-Hurwitz}
+Análisis de estabilidad lineal en tiempo continuo en el punto de operación seleccionado. El polinomio característico está dado por:
+\begin{equation}
+  \label{eq:polcar}
+  p(s) = s^3 + 0.1818 s^2 + 31.2030 s + 4.4576 \\
+\end{equation}
